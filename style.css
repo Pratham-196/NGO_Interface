@@ -145,12 +145,10 @@ html, body {
 }
 
 .tile img {
-  width: 80px;          /* smaller size */
-  height: 80px;
-  object-fit: contain;  /* keep full logo inside */
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
   margin: 20px auto 10px;
-  display: block;
-  border-radius: 8px;   /* optional: rounded corners */
 }
 
 .tile h4 {
