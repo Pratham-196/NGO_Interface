@@ -1,0 +1,86 @@
+/* page background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a1a;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 360px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #222;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* form style */
+.register-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.register-form label {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.register-form input::placeholder {
+  color: #bbb;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background: #00fff0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  background: #ff0057;
+  color: #fff;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  color: #00fff0;
+  font-size: 0.90rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #ff0057;
+  text-decoration: underline;
+}
