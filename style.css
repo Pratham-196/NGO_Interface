@@ -67,6 +67,72 @@ html, body {
   transform: translateY(-2px);
 }
 
+/* NGO BUTTON */
+.btn-NGO_1 {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent), #5dade2);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-NGO_1:hover,
+.btn-NGO_1:focus {
+  background: linear-gradient(135deg, var(--accent-hover), #2471a3);
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.6);
+  transform: translateY(-2px);
+}
+
+
+.btn-NGO_2 {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent), #5dade2);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-NGO_2:hover,
+.btn-NGO_2:focus {
+  background: linear-gradient(135deg, var(--accent-hover), #2471a3);
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-NGO_3 {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent), #5dade2);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-NGO_3:hover,
+.btn-NGO_3:focus {
+  background: linear-gradient(135deg, var(--accent-hover), #2471a3);
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.6);
+  transform: translateY(-2px);
+}
+
+
 /* CONTENT */
 .content {
   padding: 22px 20px 40px;
