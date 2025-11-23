@@ -1,0 +1,316 @@
+/* Responsive Design Component */
+
+/* Mobile optimization for background images */
+@media (max-width: 768px) {
+  .care-hero,
+  .campaigns,
+  .impact-stats,
+  .resources-section,
+  .get-involved {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .care-hero {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .campaigns,
+  .impact-stats,
+  .resources-section,
+  .get-involved {
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+  }
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+  /* Content adjustments */
+  .content {
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  /* Typography adjustments */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  
+  /* Grid adjustments */
+  .campaign-grid,
+  .values-grid,
+  .stats-grid,
+  .resources-grid,
+  .involvement-options {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  /* Card adjustments */
+  .campaign-card,
+  .value-item,
+  .stat-item,
+  .resource-item,
+  .option {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Button adjustments */
+  .btn-action {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  /* Header adjustments */
+  .site-header {
+    padding: 10px 15px;
+  }
+  
+  .site-title {
+    font-size: 1.1rem;
+  }
+  
+  /* Content adjustments */
+  .content {
+    padding: 10px;
+    margin: 15px auto;
+  }
+  
+  /* Typography adjustments */
+  .hero-ngo h2 {
+    font-size: 1.3rem;
+  }
+  
+  .hero-ngo p {
+    font-size: 0.95rem;
+  }
+  
+  /* Section adjustments */
+  .ngo-about,
+  .campaigns,
+  .impact-stats,
+  .resources-section,
+  .get-involved {
+    padding: var(--spacing-md) 15px;
+    margin: var(--spacing-md) 0;
+  }
+  
+  /* Grid adjustments for very small screens */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .value-item {
+    padding: var(--spacing-sm);
+  }
+  
+  /* Button adjustments */
+  .btn-action {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    max-width: 900px;
+  }
+  
+  .campaign-grid,
+  .values-grid,
+  .stats-grid,
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .involvement-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1200px;
+  }
+  
+  .campaign-grid,
+  .values-grid,
+  .stats-grid,
+  .resources-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .involvement-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp rendering on high DPI displays */
+  .logo-circle,
+  .event-image img,
+  .partner-logo img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .site-header,
+  .btn-action,
+  .modal {
+    display: none !important;
+  }
+  
+  .content {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .care-header {
+    background: none !important;
+    color: #000 !important;
+  }
+  
+  .care-title {
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  
+  .care-tagline {
+    color: #000 !important;
+  }
+  
+  .header-stats .stat-item {
+    background: #f0f0f0 !important;
+    color: #000 !important;
+  }
+  
+  .campaigns,
+  .impact-stats,
+  .resources-section,
+  .get-involved {
+    background: none !important;
+    color: #000 !important;
+  }
+  
+  .campaign-card,
+  .stat-item,
+  .resource-item,
+  .value-item {
+    background: #f9f9f9 !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .logo-circle {
+    animation: none !important;
+  }
+  
+  .care-title {
+    animation: none !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --text: #ffffff;
+    --muted: #cccccc;
+    --primary: #ffffff;
+  }
+  
+  .content p {
+    background: #2a2a2a;
+    color: var(--muted);
+  }
+  
+  .campaign-card,
+  .value-item,
+  .stat-item,
+  .resource-item {
+    background: #2a2a2a;
+    color: var(--text);
+  }
+  
+  .data-card {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  }
+  
+  .event-card {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+  
+  .partner-logo {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+  .care-header {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .header-stats {
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+  
+  .header-stats .stat-item {
+    padding: 10px 15px;
+    min-width: 80px;
+  }
+  
+  .header-stats .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .header-stats .stat-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* Ultra-wide Screens */
+@media (min-width: 1920px) {
+  .content {
+    max-width: 1600px;
+  }
+  
+  .campaign-grid,
+  .values-grid,
+  .stats-grid,
+  .resources-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .involvement-options {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

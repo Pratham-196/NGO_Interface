@@ -1,0 +1,47 @@
+/* CSS Variables for Greenpeace Project */
+:root {
+  /* Color Palette */
+  --bg: #f5f7fa;
+  --text: #222;
+  --muted: #4b5563;
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --accent-hover: #2980b9;
+  
+  /* Greenpeace Brand Colors */
+  --greenpeace-green: #2ecc71;
+  --greenpeace-green-dark: #27ae60;
+  --greenpeace-green-darker: #229954;
+  
+  /* Typography */
+  --font-family-primary: Arial, sans-serif;
+  --font-family-heading: 'Orbitron', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 60px;
+  
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 15px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 25px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-header: 100;
+  --z-modal: 1000;
+  --z-overlay: 999;
+}

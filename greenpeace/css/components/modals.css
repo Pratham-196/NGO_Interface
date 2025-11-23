@@ -1,0 +1,611 @@
+/* Modals Component Styles */
+
+/* Modal Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: var(--z-modal);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: 2% auto;
+  padding: 0;
+  border-radius: var(--border-radius-md);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1001;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.close:hover,
+.close:focus {
+  color: var(--greenpeace-green);
+}
+
+/* Modal Containers */
+.donation-container,
+.action-container,
+.corporate-container,
+.education-container,
+.social-container,
+.volunteer-container {
+  padding: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.donation-container h2,
+.action-container h2,
+.corporate-container h2,
+.education-container h2,
+.social-container h2,
+.volunteer-container h2 {
+  font-family: var(--font-family-heading);
+  color: var(--primary);
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.donation-subtitle,
+.action-subtitle,
+.corporate-subtitle,
+.education-subtitle,
+.social-subtitle,
+.volunteer-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.1rem;
+}
+
+/* Donation Options */
+.donation-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.donation-method {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: var(--border-radius-md);
+  border: 2px solid #e9ecef;
+}
+
+.donation-method h3 {
+  font-family: var(--font-family-heading);
+  color: var(--primary);
+  margin: 0 0 15px;
+  font-size: 1.3rem;
+}
+
+.donation-method p {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  margin: 0 0 var(--spacing-md);
+  color: var(--muted);
+}
+
+/* QR Code Container */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-md) 0;
+}
+
+.qr-card {
+  background: #fff;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+}
+
+.qr-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #e91e63, #f06292);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.profile-name {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.qr-code-container {
+  margin: 15px 0;
+}
+
+.qr-code-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.qr-code-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+}
+
+.gpay-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  color: white;
+  padding: 8px 12px;
+  border-radius: var(--border-radius-sm);
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.upi-id {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: var(--border-radius-sm);
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 15px 0;
+  border: 1px solid #e9ecef;
+}
+
+.scan-instruction {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Bank Details */
+.bank-details {
+  background: #fff;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  border: 1px solid #e9ecef;
+}
+
+.bank-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bank-info:last-child {
+  border-bottom: none;
+}
+
+.bank-info label {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.bank-info span {
+  font-family: 'Courier New', monospace;
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Form Styles */
+.volunteer-form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.volunteer-status {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius-md);
+  padding: 25px;
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.volunteer-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.volunteer-status-header h3 {
+  margin: 0;
+  font-family: var(--font-family-heading);
+  color: var(--primary);
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn-link:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.btn-link:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.volunteer-status-message {
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.volunteer-status-message.success {
+  color: var(--greenpeace-green-dark);
+}
+
+.volunteer-status-message.error {
+  color: #e74c3c;
+}
+
+.volunteer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.volunteer-list-item {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius-sm);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.volunteer-list-primary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.volunteer-name {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.volunteer-location {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.volunteer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.volunteer-pill {
+  background: rgba(46, 204, 113, 0.15);
+  color: var(--greenpeace-green-dark);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.volunteer-date {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.volunteer-empty-state {
+  display: none;
+  margin: 10px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.volunteer-empty-state.visible {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color var(--transition-fast);
+}
+
+.checkbox-label:hover {
+  background-color: #e9ecef;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--greenpeace-green), var(--greenpeace-green-dark));
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--greenpeace-green-dark), var(--greenpeace-green-darker));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.4);
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+/* Tab Styles */
+.social-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid #e9ecef;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.tab-button:hover {
+  color: var(--primary);
+  background: #f8f9fa;
+}
+
+.tab-button.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 5% auto;
+  }
+  
+  .donation-options {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .donation-container,
+  .action-container,
+  .corporate-container,
+  .education-container,
+  .social-container,
+  .volunteer-container {
+    padding: var(--spacing-md);
+  }
+  
+  .donation-container h2,
+  .action-container h2,
+  .corporate-container h2,
+  .education-container h2,
+  .social-container h2,
+  .volunteer-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .qr-code-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .bank-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .volunteer-status-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .volunteer-meta {
+    flex-direction: column;
+  }
+
+  .volunteer-date {
+    margin-left: 0;
+  }
+  
+  .social-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    border-bottom: none;
+    border-right: 3px solid transparent;
+  }
+  
+  .tab-button.active {
+    border-bottom: none;
+    border-right-color: var(--accent);
+  }
+}

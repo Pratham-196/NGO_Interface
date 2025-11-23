@@ -1,0 +1,74 @@
+/* Header Component Styles */
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+}
+
+.site-title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+}
+
+/* Navigation Buttons */
+.btn-login,
+.btn-NGO_1,
+.btn-NGO_2,
+.btn-NGO_3 {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent), #5dade2);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: var(--font-family-heading);
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.btn-login:hover,
+.btn-NGO_1:hover,
+.btn-NGO_2:hover,
+.btn-NGO_3:hover,
+.btn-login:focus,
+.btn-NGO_1:focus,
+.btn-NGO_2:focus,
+.btn-NGO_3:focus {
+  background: linear-gradient(135deg, var(--accent-hover), #2471a3);
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Responsive Header */
+@media (max-width: 520px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+  
+  .site-title {
+    font-size: 1.2rem;
+  }
+}
+

@@ -1,0 +1,301 @@
+/* Hero Component Styles */
+
+/* Greenpeace Header Section */
+.greenpeace-header {
+  background: linear-gradient(135deg, var(--greenpeace-green) 0%, var(--greenpeace-green-dark) 50%, var(--greenpeace-green-darker) 100%);
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.greenpeace-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.greenpeace-logo {
+  margin-bottom: var(--spacing-md);
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+.logo-circle::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, var(--greenpeace-green), var(--greenpeace-green-dark), var(--greenpeace-green-darker), var(--greenpeace-green));
+  border-radius: 50%;
+  z-index: -1;
+  animation: logoRotate 4s linear infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes logoRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-text {
+  font-family: var(--font-family-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--greenpeace-green), var(--greenpeace-green-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.greenpeace-title {
+  font-family: var(--font-family-heading);
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: var(--spacing-md) 0 15px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.1); }
+  100% { text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.3); }
+}
+
+.greenpeace-tagline {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 var(--spacing-xl);
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
+
+.header-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.header-stats .stat-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) 25px;
+  text-align: center;
+  transition: all var(--transition-fast);
+  min-width: 120px;
+}
+
+.header-stats .stat-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.header-stats .stat-number {
+  display: block;
+  font-family: var(--font-family-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-stats .stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* NGO Hero Section */
+.hero-ngo {
+  color: #fff;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-ngo h2 {
+  font-family: var(--font-family-heading);
+  font-size: 2.2rem;
+  margin: 0 0 15px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-ngo p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  background: none;
+  box-shadow: none;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Greenpeace Hero Background */
+.greenpeace-hero {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.greenpeace-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(46, 204, 113, 0.1), rgba(52, 152, 219, 0.1));
+  z-index: 1;
+}
+
+.greenpeace-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Action Button */
+.btn-action {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.btn-action.primary-action {
+  background-color: var(--greenpeace-green);
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.4);
+}
+
+.btn-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .greenpeace-header {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+  }
+  
+  .greenpeace-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .greenpeace-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .header-stats {
+    gap: var(--spacing-md);
+  }
+  
+  .header-stats .stat-item {
+    padding: 15px var(--spacing-md);
+    min-width: 100px;
+  }
+  
+  .header-stats .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .header-stats .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .hero-ngo h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .greenpeace-header {
+    padding: var(--spacing-lg) 15px;
+  }
+  
+  .greenpeace-title {
+    font-size: 2rem;
+  }
+  
+  .greenpeace-tagline {
+    font-size: 1rem;
+  }
+  
+  .header-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-stats .stat-item {
+    width: 100%;
+    max-width: 200px;
+  }
+}

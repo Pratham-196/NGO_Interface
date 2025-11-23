@@ -1,0 +1,235 @@
+/* Dashboard Component Styles */
+
+/* Dashboard Section */
+.dashboard-section {
+  margin: 50px 0;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: #fff;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.dashboard-section h3 {
+  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.dashboard-subtitle {
+  color: var(--muted);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.1rem;
+}
+
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid #e9ecef;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.dashboard-tab {
+  background: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
+  font-family: var(--font-family-heading);
+}
+
+.dashboard-tab:hover {
+  color: var(--primary);
+  background: #f8f9fa;
+}
+
+.dashboard-tab.active {
+  color: var(--care-blue);
+  border-bottom-color: var(--care-blue);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: var(--spacing-lg);
+}
+
+.data-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: var(--border-radius-md);
+  padding: 25px;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border-left: 4px solid var(--care-blue);
+}
+
+.data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.data-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.data-content h4 {
+  font-family: var(--font-family-heading);
+  color: var(--primary);
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.data-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--care-blue);
+  margin: 10px 0;
+}
+
+.data-trend {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.data-trend.up {
+  color: #e74c3c;
+}
+
+.data-trend.down {
+  color: var(--care-blue);
+}
+
+.data-description {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Tab Content */
+.dashboard-tab-content {
+  display: none;
+}
+
+.dashboard-tab-content.active {
+  display: block;
+}
+
+/* Real-time Data Animation */
+.data-value.animated {
+  animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Data Loading State */
+.data-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.data-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Data Status Indicators */
+.data-status {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.data-status.online {
+  background-color: var(--care-blue);
+  box-shadow: 0 0 6px rgba(0, 102, 204, 0.6);
+}
+
+.data-status.offline {
+  background-color: #e74c3c;
+}
+
+.data-status.warning {
+  background-color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .dashboard-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-tab {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .data-card {
+    padding: var(--spacing-md);
+  }
+  
+  .data-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 1rem;
+  }
+  
+  .data-value {
+    font-size: 1.8rem;
+  }
+  
+  .data-icon {
+    font-size: 2.5rem;
+  }
+}
+

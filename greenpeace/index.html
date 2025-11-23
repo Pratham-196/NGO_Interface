@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenpeace | NGO Monitoring Dashboard</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header class="site-header">
+    <a href="../index.html" class="site-title-link">
+      <h1 class="site-title">NGO Monitoring Dashboard</h1>
+    </a>
+    <nav class="site-nav">
+      <a href="#contact" class="btn-action" data-modal="contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <!-- Greenpeace Header Section -->
+    <section class="greenpeace-header">
+      <div class="header-content">
+        <div class="greenpeace-logo">
+          <div class="logo-circle">
+            <span class="logo-text">GP</span>
+          </div>
+        </div>
+        <h1 class="greenpeace-title">Greenpeace</h1>
+        <p class="greenpeace-tagline">Defending Our Planet for a Green and Peaceful Future</p>
+        <div class="header-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Years of Action</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">55+</span>
+            <span class="stat-label">Countries</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3M+</span>
+            <span class="stat-label">Supporters</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-ngo greenpeace-hero">
+      <h2>Defending Our Planet for a Green and Peaceful Future</h2>
+      <p>For over 50 years, Greenpeace has used non-violent, creative action to pave the way towards a greener, more peaceful world, and to confront the systems that threaten our environment.</p>
+      <a href="#donate" class="btn-action primary-action">Donate Now</a>
+    </section>
+    
+    <!-- About Section -->
+    <section class="ngo-about">
+      <h3>Our Mission</h3>
+      <p>
+        Greenpeace is an independent campaigning organisation, which uses peaceful, direct action to expose global environmental problems and develop solutions for a green and peaceful future. Our goal is to ensure the ability of the earth to nurture life in all its diversity.
+      </p>
+      
+      <h3>Our Values</h3>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4>🌱 <span>Independence</span></h4>
+          <p>We accept no money from governments or corporations, ensuring our campaigns remain independent and uncompromised.</p>
+        </div>
+        <div class="value-item">
+          <h4>✌️ <span>Non-Violence</span></h4>
+          <p>We use peaceful, creative confrontation to expose environmental threats and promote solutions.</p>
+        </div>
+        <div class="value-item">
+          <h4>🌍 <span>Global Reach</span></h4>
+          <p>Operating in over 55 countries, we tackle environmental issues wherever they occur.</p>
+        </div>
+        <div class="value-item">
+          <h4>🔬 <span>Science-Based</span></h4>
+          <p>Our campaigns are grounded in rigorous scientific research and evidence-based solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section class="campaigns">
+      <h3>Our Core Campaigns</h3>
+      <div class="campaign-grid">
+        <div class="campaign-card">
+          <h4>🌳 <span>Protect Forests</span></h4>
+          <p>We work to end deforestation and protect our planet's vital forests, which are crucial for biodiversity and fighting climate change. Our campaigns target illegal logging, palm oil expansion, and forest fires.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>🌊 <span>Save the Oceans</span></h4>
+          <p>From ending plastic pollution to stopping destructive fishing, we campaign for a network of ocean sanctuaries to protect marine life. We fight against overfishing, deep-sea mining, and ocean acidification.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>☀️ <span>Climate Action</span></h4>
+          <p>We demand a shift from fossil fuels to renewable energy sources to tackle the climate crisis. Our campaigns target coal plants, oil drilling, and promote clean energy solutions worldwide.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>♻️ <span>Live Sustainably</span></h4>
+          <p>We challenge corporations to reduce their environmental impact and promote solutions that help people live more sustainably. We campaign for sustainable agriculture, clean transportation, and waste reduction.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>🛡️ <span>Protect Biodiversity</span></h4>
+          <p>We work to protect endangered species and their habitats, campaign against wildlife trafficking, and promote conservation efforts that preserve the planet's incredible biodiversity.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>⚡ <span>Clean Energy</span></h4>
+          <p>We campaign for a rapid transition to 100% renewable energy, oppose nuclear power, and promote energy efficiency solutions that reduce our carbon footprint and create green jobs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section class="impact-stats">
+      <h3>Our Impact</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h4>50+</h4>
+          <p>Years of Environmental Activism</p>
+        </div>
+        <div class="stat-item">
+          <h4>55+</h4>
+          <p>Countries We Operate In</p>
+        </div>
+        <div class="stat-item">
+          <h4>3M+</h4>
+          <p>Supporters Worldwide</p>
+        </div>
+        <div class="stat-item">
+          <h4>100%</h4>
+          <p>Independent Funding</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Environmental Data Dashboard -->
+    <section class="dashboard-section">
+      <h3>Environmental Data Dashboard</h3>
+      <p class="dashboard-subtitle">Real-time environmental data and climate indicators</p>
+      
+      <div class="dashboard-tabs">
+        <button class="dashboard-tab active" data-tab="climate">Climate Data</button>
+        <button class="dashboard-tab" data-tab="air-quality">Air Quality</button>
+        <button class="dashboard-tab" data-tab="deforestation">Deforestation</button>
+        <button class="dashboard-tab" data-tab="ocean-health">Ocean Health</button>
+      </div>
+      
+      <div class="dashboard-tab-content active" data-tab="climate">
+        <div class="dashboard-grid">
+          <div class="data-card" data-metric="temperature">
+            <div class="data-icon">🌡️</div>
+            <div class="data-content">
+              <h4>Global Temperature</h4>
+              <div class="data-value">1.1°C</div>
+              <div class="data-trend up">↗ Increasing</div>
+              <p class="data-description">Temperature rise since pre-industrial times</p>
+            </div>
+          </div>
+          <div class="data-card" data-metric="co2Level">
+            <div class="data-icon">🏭</div>
+            <div class="data-content">
+              <h4>CO2 Levels</h4>
+              <div class="data-value">415 ppm</div>
+              <div class="data-trend up">↗ Increasing</div>
+              <p class="data-description">Atmospheric CO2 concentration</p>
+            </div>
+          </div>
+          <div class="data-card" data-metric="seaLevel">
+            <div class="data-icon">🌊</div>
+            <div class="data-content">
+              <h4>Sea Level Rise</h4>
+              <div class="data-value">3.3 mm/year</div>
+              <div class="data-trend up">↗ Increasing</div>
+              <p class="data-description">Global sea level rise rate</p>
+            </div>
+          </div>
+          <div class="data-card" data-metric="iceLoss">
+            <div class="data-icon">🧊</div>
+            <div class="data-content">
+              <h4>Ice Loss</h4>
+              <div class="data-value">150 Gt/year</div>
+              <div class="data-trend up">↗ Increasing</div>
+              <p class="data-description">Annual ice mass loss from glaciers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Calculator -->
+    <section class="calculator-section">
+      <h3>Impact Calculator</h3>
+      <p class="calculator-subtitle">Calculate your environmental impact and see how your actions make a difference</p>
+      
+      <div class="calculator-tabs">
+        <button class="calculator-tab active" data-tab="donation">Donation Impact</button>
+        <button class="calculator-tab" data-tab="carbon">Carbon Footprint</button>
+        <button class="calculator-tab" data-tab="lifestyle">Lifestyle Impact</button>
+      </div>
+      
+      <div class="calculator-tab-content active" data-tab="donation">
+        <div class="calculator-container">
+          <div class="calculator-input">
+            <h4>Calculate Your Impact</h4>
+            <form id="donation-calculator">
+              <div class="input-group">
+                <label for="donation-amount">Donation Amount ($)</label>
+                <input type="number" id="donation-amount" placeholder="Enter amount" min="0" step="0.01">
+              </div>
+              <button type="submit" class="btn-calculate">Calculate Impact</button>
+            </form>
+          </div>
+          <div class="calculator-results">
+            <h4>Your Impact</h4>
+            <div class="impact-grid">
+              <div class="impact-item">
+                <div class="impact-icon">🌳</div>
+                <div class="impact-value" id="trees-planted">0</div>
+                <div class="impact-label">Trees Planted</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">🌍</div>
+                <div class="impact-value" id="co2-offset">0</div>
+                <div class="impact-label">kg CO2 Offset</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">🌊</div>
+                <div class="impact-value" id="ocean-cleanup">0</div>
+                <div class="impact-label">kg Plastic Removed</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">⚡</div>
+                <div class="impact-value" id="renewable-energy">0</div>
+                <div class="impact-label">kWh Renewable Energy</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">🦋</div>
+                <div class="impact-value" id="wildlife-protected">0</div>
+                <div class="impact-label">Animals Protected</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events & Photo Gallery -->
+    <section class="events-gallery-section">
+      <h3>Past Events & Campaigns</h3>
+      <p class="events-subtitle">A visual journey through our most impactful environmental campaigns and direct actions</p>
+      
+      <div class="events-tabs">
+        <button class="events-tab active" data-tab="recent">Recent Events</button>
+        <button class="events-tab" data-tab="climate">Climate Actions</button>
+        <button class="events-tab" data-tab="ocean">Ocean Campaigns</button>
+        <button class="events-tab" data-tab="forest">Forest Protection</button>
+      </div>
+      
+      <div class="events-tab-content active" data-tab="recent">
+        <div class="events-grid">
+          <!-- Events will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships-section">
+      <h3>Our Partners</h3>
+      <p class="partnerships-subtitle">Working together with leading organizations to protect our planet</p>
+      
+      <div class="partnerships-grid">
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="UN Environment Programme">
+          <div class="partner-name">UN Environment Programme</div>
+        </div>
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=200&auto=format&fit=crop" alt="WWF">
+          <div class="partner-name">World Wildlife Fund</div>
+        </div>
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=200&auto=format&fit=crop" alt="Sierra Club">
+          <div class="partner-name">Sierra Club</div>
+        </div>
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=200&auto=format&fit=crop" alt="Friends of the Earth">
+          <div class="partner-name">Friends of the Earth</div>
+        </div>
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=200&auto=format&fit=crop" alt="350.org">
+          <div class="partner-name">350.org</div>
+        </div>
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=200&auto=format&fit=crop" alt="Ocean Conservancy">
+          <div class="partner-name">Ocean Conservancy</div>
+        </div>
+      </div>
+      
+      <div class="partnerships-description">
+        <p>These partnerships enable us to amplify our impact, share resources, and work together on global environmental challenges. Together, we are stronger in our mission to protect the planet.</p>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+      <h3>How You Can Help</h3>
+      <div class="involvement-options">
+        <div class="option">
+          <h4>💰 <span>Make a Donation</span></h4>
+          <p>Your donation powers our independent research, investigations, and peaceful direct action.</p>
+          <a href="#donate" class="btn-action" data-modal="donation">Donate Now</a>
+        </div>
+        <div class="option">
+          <h4>✊ <span>Take Action</span></h4>
+          <p>Join millions of people worldwide by signing petitions, joining local groups, and demanding change.</p>
+          <a href="#action" class="btn-action" data-modal="action">Take Action</a>
+        </div>
+        <div class="option">
+          <h4>🤝 <span>Volunteer</span></h4>
+          <p>Become a Greenpeace volunteer and participate in local campaigns, events, and direct actions in your community.</p>
+          <a href="#volunteer" class="btn-action" data-modal="volunteer">Volunteer</a>
+        </div>
+        <div class="option">
+          <h4>📢 <span>Spread the Word</span></h4>
+          <p>Share our campaigns on social media, organize community events, and help raise awareness about environmental issues.</p>
+          <a href="#social" class="btn-action" data-modal="social">Share</a>
+        </div>
+        <div class="option">
+          <h4>📚 <span>Educational Resources</span></h4>
+          <p>Access our educational materials, reports, and resources to learn more about environmental issues and solutions.</p>
+          <a href="#education" class="btn-action" data-modal="education">Learn More</a>
+        </div>
+        <div class="option">
+          <h4>🏢 <span>Corporate Campaigns</span></h4>
+          <p>Join targeted campaigns that challenge corporations to change their environmental practices and adopt sustainable business models.</p>
+          <a href="#corporate" class="btn-action" data-modal="corporate">Join Campaign</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+      <h3>Resources & Publications</h3>
+      <div class="resources-grid">
+        <div class="resource-item">
+          <h4>📊 <span>Research Reports</span></h4>
+          <p>Access our latest scientific research and environmental impact studies on climate change, biodiversity, and pollution.</p>
+        </div>
+        <div class="resource-item">
+          <h4>🗺️ <span>Global Mapping Hub</span></h4>
+          <p>Explore our interactive maps and GIS analysis tools for environmental monitoring and campaign visualization.</p>
+        </div>
+        <div class="resource-item">
+          <h4>📖 <span>Compass Magazine</span></h4>
+          <p>Read our quarterly members' magazine featuring field reports, campaign updates, and environmental news.</p>
+        </div>
+        <div class="resource-item">
+          <h4>🎥 <span>Media Library</span></h4>
+          <p>Browse our collection of photos, videos, and multimedia content from campaigns and environmental investigations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer-ngo">
+    <p>&copy; 2024 Greenpeace. All rights reserved. | <a href="../index.html">Back to Dashboard</a></p>
+  </footer>
+
+  <!-- Modals -->
+  <!-- Donation Modal -->
+  <div id="donation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="donation-container">
+        <h2>Support Greenpeace</h2>
+        <p class="donation-subtitle">Your donation helps us fight for a green and peaceful future</p>
+        
+        <div class="donation-options">
+          <div class="donation-method">
+            <h3>💳 Online Donation</h3>
+            <p>Make a secure online donation using your credit card or PayPal</p>
+            <div class="qr-container">
+              <div class="qr-card">
+                <div class="qr-header">
+                  <div class="profile-icon">GP</div>
+                  <div class="profile-name">Greenpeace</div>
+                </div>
+                <div class="qr-code-container">
+                  <div class="qr-code-image">
+                    <img src="../qr-code.svg" alt="QR Code" class="qr-code-img">
+                    <div class="gpay-overlay">GPay</div>
+                  </div>
+                </div>
+                <div class="upi-id">greenpeace@paytm</div>
+                <p class="scan-instruction">Scan QR code with any UPI app</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="donation-method">
+            <h3>🏦 Bank Transfer</h3>
+            <p>Transfer directly to our bank account</p>
+            <div class="bank-details">
+              <div class="bank-info">
+                <label>Account Name:</label>
+                <span>Greenpeace India</span>
+              </div>
+              <div class="bank-info">
+                <label>Account Number:</label>
+                <span>1234567890</span>
+              </div>
+              <div class="bank-info">
+                <label>IFSC Code:</label>
+                <span>SBIN0001234</span>
+              </div>
+              <div class="bank-info">
+                <label>Bank:</label>
+                <span>State Bank of India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="donation-footer">
+          <div class="donation-note">
+            <strong>Your donation is 100% tax-deductible</strong><br>
+            All donations are used exclusively for environmental campaigns and are not used for political purposes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Modal -->
+  <div id="action-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="action-container">
+        <h2>Take Action</h2>
+        <p class="action-subtitle">Join our campaigns and make a difference</p>
+        <!-- Action content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteer-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="volunteer-container">
+        <h2>Become a Volunteer</h2>
+        <p class="volunteer-subtitle">Join our team of passionate environmental activists</p>
+        
+        <form id="volunteer-form" class="volunteer-form">
+          <div class="form-group">
+            <label for="volunteer-name">Full Name</label>
+            <input type="text" id="volunteer-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="volunteer-email">Email</label>
+            <input type="email" id="volunteer-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="volunteer-phone">Phone Number</label>
+            <input type="tel" id="volunteer-phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="volunteer-location">Location</label>
+            <input type="text" id="volunteer-location" name="location" required>
+          </div>
+          <div class="form-group">
+            <label>Areas of Interest</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="climate"> Climate Action
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="ocean"> Ocean Protection
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="forest"> Forest Conservation
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="energy"> Clean Energy
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="wildlife"> Wildlife Protection
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="education"> Environmental Education
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="volunteer-experience">Previous Experience</label>
+            <textarea id="volunteer-experience" name="experience" placeholder="Tell us about your environmental activism experience"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Submit Application</button>
+            <button type="button" class="btn-secondary" onclick="Modals.close()">Cancel</button>
+          </div>
+        </form>
+        
+        <div class="volunteer-status">
+          <div class="volunteer-status-header">
+            <h3>Recent Volunteer Sign-ups</h3>
+            <button type="button" class="btn-link" id="refresh-volunteers">Refresh</button>
+          </div>
+          <p class="volunteer-status-message" id="volunteer-status-message">
+            Connect to the database to see live updates from Greenpeace volunteers.
+          </p>
+          <ul class="volunteer-list" id="volunteer-list"></ul>
+          <p class="volunteer-empty-state" id="volunteer-empty-state">No volunteer submissions yet. Be the first to join!</p>
+        </div>
+
+        <div class="volunteer-info">
+          <h3>What to Expect</h3>
+          <div class="info-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <p>Submit your application</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <p>We'll review and contact you</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <p>Join our volunteer community</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <p>Start making a difference</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Media Modal -->
+  <div id="social-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="social-container">
+        <h2>Share on Social Media</h2>
+        <p class="social-subtitle">Help spread the word about environmental issues</p>
+        
+        <div class="social-tabs">
+          <button class="tab-button active" data-tab="messages">Message Templates</button>
+          <button class="tab-button" data-tab="accounts">Our Accounts</button>
+          <button class="tab-button" data-tab="hashtags">Hashtags</button>
+        </div>
+        
+        <div class="tab-content active" data-tab="messages">
+          <div class="message-templates">
+            <div class="message-card">
+              <h4>Climate Action</h4>
+              <textarea class="message-text" readonly>🌍 The climate crisis is real and urgent. We need immediate action to protect our planet for future generations. Join @Greenpeace in demanding climate justice now! #ClimateAction #Greenpeace</textarea>
+              <button class="copy-btn" data-copy="🌍 The climate crisis is real and urgent. We need immediate action to protect our planet for future generations. Join @Greenpeace in demanding climate justice now! #ClimateAction #Greenpeace">Copy</button>
+              <div class="share-buttons">
+                <a href="#" class="social-btn facebook">Facebook</a>
+                <a href="#" class="social-btn twitter">Twitter</a>
+                <a href="#" class="social-btn linkedin">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Modal -->
+  <div id="education-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="education-container">
+        <h2>Educational Resources</h2>
+        <p class="education-subtitle">Learn more about environmental issues and solutions</p>
+        <!-- Education content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Corporate Modal -->
+  <div id="corporate-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="corporate-container">
+        <h2>Corporate Campaigns</h2>
+        <p class="corporate-subtitle">Challenge corporations to change their environmental practices</p>
+        <!-- Corporate content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Modal -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="education-container">
+        <h2>Contact Greenpeace India</h2>
+        <p class="education-subtitle">Official contact information sourced from Greenpeace India</p>
+
+        <div class="financial-stats">
+          <div class="stat-card revenue">
+            <div class="stat-icon">📍</div>
+            <div class="stat-content">
+              <h4>Greenpeace International (Global HQ)</h4>
+              <p class="stat-description">Stadhouderskade 55, 1072 AB Amsterdam, The Netherlands</p>
+            </div>
+          </div>
+          <div class="stat-card expenses">
+            <div class="stat-icon">📞</div>
+            <div class="stat-content">
+              <h4>Phone</h4>
+              <p class="stat-description">+31 20 718 2000</p>
+            </div>
+          </div>
+          <div class="stat-card assets">
+            <div class="stat-icon">✉️</div>
+            <div class="stat-content">
+              <h4>Email</h4>
+              <p class="stat-description"><a href="mailto:info@greenpeace.org">info@greenpeace.org</a></p>
+            </div>
+          </div>
+          <div class="stat-card efficiency">
+            <div class="stat-icon">🌐</div>
+            <div class="stat-content">
+              <h4>Website</h4>
+              <p class="stat-description"><a href="https://www.greenpeace.org" target="_blank" rel="noopener">greenpeace.org</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="financial-highlights">
+          <h4>Greenpeace India</h4>
+          <ul class="highlights-list">
+            <li>Address: 60 Wellington Street, Richmond Town, Bengaluru, Karnataka 560025, India</li>
+            <li>Phone: +91 80 4282 1010</li>
+            <li>Email: <a href="mailto:support.india@greenpeace.org">support.india@greenpeace.org</a></li>
+            <li>Website: <a href="https://www.greenpeace.org/india/en/" target="_blank" rel="noopener">greenpeace.org/india</a></li>
+          </ul>
+        </div>
+
+        <div class="transparency-footer">
+          <p>For media inquiries, partnerships, or donations, please visit the official website to find specific department contacts.</p>
+          <a class="transparency-link" href="https://www.greenpeace.org/india/en/" target="_blank" rel="noopener">Visit Greenpeace India</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+</html>
