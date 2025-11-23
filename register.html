@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | NGO Monitoring Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="register.css"/>
+</head>
+<body>
+  <div class="box">
+    <form class="register-form">
+      <h2>NEW REGISTRATION</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit" class="btn-register">Register</button>
+
+      <p id="register-status" class="register-status" aria-live="polite"></p>
+
+      <div class="links">
+        <a href="login.html">Already have an account? Login</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const registerForm = document.querySelector('.register-form');
+    const statusEl = document.getElementById('register-status');
+
+    async function handleRegistration(event) {
+      event.preventDefault();
+
+      const payload = {
+        fullName: registerForm.name.value.trim(),
+        email: registerForm.email.value.trim(),
+        username: registerForm.username.value.trim(),
+        password: registerForm.password.value
+      };
+
+      statusEl.textContent = 'Creating your account...';
+      statusEl.className = 'register-status pending';
+
+      try {
+        const response = await fetch('http://localhost:3001/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.message || 'Registration failed. Please try again.');
+        }
+
+        statusEl.textContent = 'Registration successful! Redirecting to login...';
+        statusEl.className = 'register-status success';
+
+        setTimeout(() => {
+          window.location.href = 'login.html';
+        }, 1200);
+      } catch (error) {
+        statusEl.textContent = error.message || 'Unable to register at the moment.';
+        statusEl.className = 'register-status error';
+      }
+    }
+
+    registerForm.addEventListener('submit', handleRegistration);
+  </script>
+
+</body>
+</html>

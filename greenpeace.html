@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greenpeace | NGO Monitoring Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="site-title-link">
+      <h1 class="site-title">NGO Monitoring Dashboard</h1>
+    </a>
+    <nav class="site-nav">
+      <a href="#contact" class="btn-action" data-modal="contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <!-- Greenpeace Header Section -->
+    <section class="greenpeace-header">
+      <div class="header-content">
+        <div class="greenpeace-logo">
+          <div class="logo-circle">
+            <span class="logo-text">GP</span>
+          </div>
+        </div>
+        <h1 class="greenpeace-title">Greenpeace</h1>
+        <p class="greenpeace-tagline">Defending Our Planet for a Green and Peaceful Future</p>
+        <div class="header-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Years of Action</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">55+</span>
+            <span class="stat-label">Countries</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3M+</span>
+            <span class="stat-label">Supporters</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-ngo greenpeace-hero">
+      <h2>Defending Our Planet for a Green and Peaceful Future</h2>
+      <p>For over 50 years, Greenpeace has used non-violent, creative action to pave the way towards a greener, more peaceful world, and to confront the systems that threaten our environment.</p>
+      <a href="#donate" class="btn-action primary-action">Donate Now</a>
+    </section>
+    
+    <section class="ngo-about">
+      <h3>Our Mission</h3>
+      <p>
+        Greenpeace is an independent campaigning organisation, which uses peaceful, direct action to expose global environmental problems and develop solutions for a green and peaceful future. Our goal is to ensure the ability of the earth to nurture life in all its diversity.
+      </p>
+      
+      <h3>Our Values</h3>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4>🌱 Independence</h4>
+          <p>We accept no money from governments or corporations, ensuring our campaigns remain independent and uncompromised.</p>
+        </div>
+        <div class="value-item">
+          <h4>✌️ Non-Violence</h4>
+          <p>We use peaceful, creative confrontation to expose environmental threats and promote solutions.</p>
+        </div>
+        <div class="value-item">
+          <h4>🌍 Global Reach</h4>
+          <p>Operating in over 55 countries, we tackle environmental issues wherever they occur.</p>
+        </div>
+        <div class="value-item">
+          <h4>🔬 Science-Based</h4>
+          <p>Our campaigns are grounded in rigorous scientific research and evidence-based solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaigns">
+      <h3>Our Core Campaigns</h3>
+      <div class="campaign-grid">
+        <div class="campaign-card">
+          <h4>🌳 Protect Forests</h4>
+          <p>We work to end deforestation and protect our planet's vital forests, which are crucial for biodiversity and fighting climate change. Our campaigns target illegal logging, palm oil expansion, and forest fires.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>🌊 Save the Oceans</h4>
+          <p>From ending plastic pollution to stopping destructive fishing, we campaign for a network of ocean sanctuaries to protect marine life. We fight against overfishing, deep-sea mining, and ocean acidification.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>☀️ Climate Action</h4>
+          <p>We demand a shift from fossil fuels to renewable energy sources to tackle the climate crisis. Our campaigns target coal plants, oil drilling, and promote clean energy solutions worldwide.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>♻️ Live Sustainably</h4>
+          <p>We challenge corporations to reduce their environmental impact and promote solutions that help people live more sustainable lives. This includes campaigns against fast fashion, single-use plastics, and toxic chemicals.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>🌱 Agriculture & Food</h4>
+          <p>We promote sustainable agriculture and fight against industrial farming practices that harm the environment. Our campaigns focus on reducing pesticide use, protecting pollinators, and promoting organic farming.</p>
+        </div>
+        <div class="campaign-card">
+          <h4>⚡ Energy Revolution</h4>
+          <p>We campaign for a complete transition to renewable energy sources. This includes opposing nuclear power, promoting solar and wind energy, and fighting against fossil fuel infrastructure projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-stats">
+      <h3>Our Impact</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h4>50+</h4>
+          <p>Years of Environmental Activism</p>
+        </div>
+        <div class="stat-item">
+          <h4>55+</h4>
+          <p>Countries Where We Operate</p>
+        </div>
+        <div class="stat-item">
+          <h4>3M+</h4>
+          <p>Supporters Worldwide</p>
+        </div>
+        <div class="stat-item">
+          <h4>100%</h4>
+          <p>Independent Funding</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="get-involved">
+      <h3>How You Can Help</h3>
+      <div class="involvement-options">
+        <div class="option">
+          <h4>💰 Make a Donation</h4>
+          <p>Your donation powers our independent research, investigations, and peaceful direct action. We accept no money from governments or corporations - only from people like you.</p>
+          <button onclick="openDonationModal()" class="btn-action">Donate Today</button>
+          <button onclick="openDonationsInfoModal()" class="btn-action-secondary">View Financial Transparency</button>
+        </div>
+        <div class="option">
+          <h4>📝 Take Action</h4>
+          <p>Join millions of people around the world by signing petitions, joining local groups, and demanding change from corporations and governments.</p>
+          <button onclick="openActionModal()" class="btn-action">Sign a Petition</button>
+        </div>
+        <div class="option">
+          <h4>🤝 Volunteer</h4>
+          <p>Become a Greenpeace volunteer and participate in local campaigns, events, and direct actions in your community.</p>
+          <button onclick="openVolunteerModal()" class="btn-action">Join as Volunteer</button>
+        </div>
+        <div class="option">
+          <h4>📢 Spread the Word</h4>
+          <p>Share our campaigns on social media, organize community events, and help raise awareness about environmental issues.</p>
+          <button onclick="openSocialModal()" class="btn-action">Share Campaigns</button>
+        </div>
+        <div class="option">
+          <h4>🎓 Educational Resources</h4>
+          <p>Access our educational materials, reports, and resources to learn more about environmental issues and solutions.</p>
+          <button onclick="openEducationModal()" class="btn-action">View Resources</button>
+        </div>
+        <div class="option">
+          <h4>🏢 Corporate Campaigns</h4>
+          <p>Join campaigns targeting corporations to change their environmental practices and adopt sustainable business models.</p>
+          <button onclick="openCorporateModal()" class="btn-action">Join Campaigns</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Environmental Data Dashboard -->
+    <section class="dashboard-section">
+      <h3>🌍 Environmental Data Dashboard</h3>
+      <p class="dashboard-subtitle">Real-time environmental data and climate indicators</p>
+      
+      <div class="dashboard-tabs">
+        <button class="tab-button active" onclick="openDashboardTab(event, 'climateData')">🌡️ Climate Data</button>
+        <button class="tab-button" onclick="openDashboardTab(event, 'airQuality')">💨 Air Quality</button>
+        <button class="tab-button" onclick="openDashboardTab(event, 'deforestation')">🌳 Deforestation</button>
+        <button class="tab-button" onclick="openDashboardTab(event, 'oceanHealth')">🌊 Ocean Health</button>
+      </div>
+
+      <!-- Climate Data Tab -->
+      <div id="climateData" class="tab-content active">
+        <div class="dashboard-grid">
+          <div class="data-card">
+            <div class="data-icon">🌡️</div>
+            <div class="data-content">
+              <h4>Global Temperature Rise</h4>
+              <div class="data-value">+1.1°C</div>
+              <div class="data-trend up">↗ +0.2°C since 2020</div>
+              <div class="data-description">Above pre-industrial levels</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🏔️</div>
+            <div class="data-content">
+              <h4>Arctic Ice Loss</h4>
+              <div class="data-value">-13%</div>
+              <div class="data-trend down">↘ Per decade</div>
+              <div class="data-description">Sea ice extent decline</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🔥</div>
+            <div class="data-content">
+              <h4>Wildfire Frequency</h4>
+              <div class="data-value">+25%</div>
+              <div class="data-trend up">↗ Since 2019</div>
+              <div class="data-description">Global increase in wildfires</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🌧️</div>
+            <div class="data-content">
+              <h4>Extreme Weather Events</h4>
+              <div class="data-value">+40%</div>
+              <div class="data-trend up">↗ Since 2015</div>
+              <div class="data-description">Increase in extreme events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Air Quality Tab -->
+      <div id="airQuality" class="tab-content">
+        <div class="dashboard-grid">
+          <div class="data-card">
+            <div class="data-icon">🏭</div>
+            <div class="data-content">
+              <h4>Global CO2 Levels</h4>
+              <div class="data-value">421 ppm</div>
+              <div class="data-trend up">↗ +2.4 ppm/year</div>
+              <div class="data-description">Atmospheric concentration</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">😷</div>
+            <div class="data-content">
+              <h4>Air Pollution Deaths</h4>
+              <div class="data-value">7M</div>
+              <div class="data-trend up">↗ Annually</div>
+              <div class="data-description">Premature deaths worldwide</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🚗</div>
+            <div class="data-content">
+              <h4>Transport Emissions</h4>
+              <div class="data-value">24%</div>
+              <div class="data-trend up">↗ Of global CO2</div>
+              <div class="data-description">From transportation sector</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🏭</div>
+            <div class="data-content">
+              <h4>Industrial Pollution</h4>
+              <div class="data-value">31%</div>
+              <div class="data-trend up">↗ Of global emissions</div>
+              <div class="data-description">From industrial activities</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deforestation Tab -->
+      <div id="deforestation" class="tab-content">
+        <div class="dashboard-grid">
+          <div class="data-card">
+            <div class="data-icon">🌳</div>
+            <div class="data-content">
+              <h4>Forest Loss Rate</h4>
+              <div class="data-value">10M ha</div>
+              <div class="data-trend down">↘ Annually</div>
+              <div class="data-description">Global forest area lost</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🦧</div>
+            <div class="data-content">
+              <h4>Biodiversity Loss</h4>
+              <div class="data-value">68%</div>
+              <div class="data-trend down">↘ Since 1970</div>
+              <div class="data-description">Wildlife population decline</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🌴</div>
+            <div class="data-content">
+              <h4>Amazon Deforestation</h4>
+              <div class="data-value">+22%</div>
+              <div class="data-trend up">↗ In 2023</div>
+              <div class="data-description">Increase from previous year</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🌱</div>
+            <div class="data-content">
+              <h4>Reforestation Rate</h4>
+              <div class="data-value">5.2M ha</div>
+              <div class="data-trend up">↗ Annually</div>
+              <div class="data-description">Global reforestation efforts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ocean Health Tab -->
+      <div id="oceanHealth" class="tab-content">
+        <div class="dashboard-grid">
+          <div class="data-card">
+            <div class="data-icon">🌊</div>
+            <div class="data-content">
+              <h4>Ocean Temperature</h4>
+              <div class="data-value">+0.8°C</div>
+              <div class="data-trend up">↗ Since 1980</div>
+              <div class="data-description">Average ocean warming</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🐟</div>
+            <div class="data-content">
+              <h4>Marine Life Decline</h4>
+              <div class="data-value">-50%</div>
+              <div class="data-trend down">↘ Since 1970</div>
+              <div class="data-description">Marine species population</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🗑️</div>
+            <div class="data-content">
+              <h4>Plastic Pollution</h4>
+              <div class="data-value">8M tons</div>
+              <div class="data-trend up">↗ Annually</div>
+              <div class="data-description">Plastic entering oceans</div>
+            </div>
+          </div>
+          
+          <div class="data-card">
+            <div class="data-icon">🏝️</div>
+            <div class="data-content">
+              <h4>Coral Reef Loss</h4>
+              <div class="data-value">-50%</div>
+              <div class="data-trend down">↘ Since 1980</div>
+              <div class="data-description">Global coral reef coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Calculator -->
+    <section class="calculator-section">
+      <h3>🧮 Impact Calculator</h3>
+      <p class="calculator-subtitle">Calculate your environmental impact and see how your actions make a difference</p>
+      
+      <div class="calculator-tabs">
+        <button class="tab-button active" onclick="openCalculatorTab(event, 'donationImpact')">💰 Donation Impact</button>
+        <button class="tab-button" onclick="openCalculatorTab(event, 'carbonFootprint')">👣 Carbon Footprint</button>
+        <button class="tab-button" onclick="openCalculatorTab(event, 'lifestyleImpact')">🌱 Lifestyle Impact</button>
+      </div>
+
+      <!-- Donation Impact Tab -->
+      <div id="donationImpact" class="tab-content active">
+        <div class="calculator-container">
+          <div class="calculator-input">
+            <h4>Calculate Your Donation Impact</h4>
+            <div class="input-group">
+              <label for="donationAmount">Donation Amount ($)</label>
+              <input type="number" id="donationAmount" placeholder="Enter amount" min="1" max="10000">
+            </div>
+            <button onclick="calculateDonationImpact()" class="btn-calculate">Calculate Impact</button>
+          </div>
+          
+          <div class="calculator-results" id="donationResults">
+            <h4>Your Impact</h4>
+            <div class="impact-grid">
+              <div class="impact-item">
+                <div class="impact-icon">🌳</div>
+                <div class="impact-content">
+                  <div class="impact-value" id="treesPlanted">0</div>
+                  <div class="impact-label">Trees Planted</div>
+                </div>
+              </div>
+              
+              <div class="impact-item">
+                <div class="impact-icon">🐋</div>
+                <div class="impact-content">
+                  <div class="impact-value" id="oceanProtected">0</div>
+                  <div class="impact-label">Ocean Areas Protected (km²)</div>
+                </div>
+              </div>
+              
+              <div class="impact-item">
+                <div class="impact-icon">🏭</div>
+                <div class="impact-content">
+                  <div class="impact-value" id="co2Reduced">0</div>
+                  <div class="impact-label">CO2 Reduced (tons)</div>
+                </div>
+              </div>
+              
+              <div class="impact-item">
+                <div class="impact-icon">📢</div>
+                <div class="impact-content">
+                  <div class="impact-value" id="campaignsSupported">0</div>
+                  <div class="impact-label">Campaigns Supported</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carbon Footprint Tab -->
+      <div id="carbonFootprint" class="tab-content">
+        <div class="calculator-container">
+          <div class="calculator-input">
+            <h4>Calculate Your Carbon Footprint</h4>
+            <div class="input-group">
+              <label for="monthlyElectricity">Monthly Electricity Bill ($)</label>
+              <input type="number" id="monthlyElectricity" placeholder="Enter amount" min="0">
+            </div>
+            <div class="input-group">
+              <label for="monthlyGas">Monthly Gas Bill ($)</label>
+              <input type="number" id="monthlyGas" placeholder="Enter amount" min="0">
+            </div>
+            <div class="input-group">
+              <label for="monthlyMiles">Monthly Miles Driven</label>
+              <input type="number" id="monthlyMiles" placeholder="Enter miles" min="0">
+            </div>
+            <div class="input-group">
+              <label for="monthlyFlights">Monthly Flights</label>
+              <input type="number" id="monthlyFlights" placeholder="Enter number" min="0">
+            </div>
+            <button onclick="calculateCarbonFootprint()" class="btn-calculate">Calculate Footprint</button>
+          </div>
+          
+          <div class="calculator-results" id="carbonResults">
+            <h4>Your Carbon Footprint</h4>
+            <div class="footprint-summary">
+              <div class="footprint-total">
+                <div class="footprint-value" id="totalFootprint">0</div>
+                <div class="footprint-label">Tons CO2/year</div>
+              </div>
+              <div class="footprint-comparison">
+                <div class="comparison-item">
+                  <span>US Average:</span>
+                  <span id="usAverage">16 tons</span>
+                </div>
+                <div class="comparison-item">
+                  <span>Global Average:</span>
+                  <span id="globalAverage">4.8 tons</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="footprint-breakdown">
+              <h5>Breakdown by Category</h5>
+              <div class="breakdown-item">
+                <span>🏠 Home Energy:</span>
+                <span id="homeEnergy">0 tons</span>
+              </div>
+              <div class="breakdown-item">
+                <span>🚗 Transportation:</span>
+                <span id="transportation">0 tons</span>
+              </div>
+              <div class="breakdown-item">
+                <span>✈️ Air Travel:</span>
+                <span id="airTravel">0 tons</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lifestyle Impact Tab -->
+      <div id="lifestyleImpact" class="tab-content">
+        <div class="calculator-container">
+          <div class="calculator-input">
+            <h4>Calculate Your Lifestyle Impact</h4>
+            <div class="input-group">
+              <label for="meatConsumption">Meat Consumption (meals/week)</label>
+              <input type="number" id="meatConsumption" placeholder="Enter number" min="0" max="21">
+            </div>
+            <div class="input-group">
+              <label for="plasticUsage">Single-use Plastic Items (per week)</label>
+              <input type="number" id="plasticUsage" placeholder="Enter number" min="0">
+            </div>
+            <div class="input-group">
+              <label for="waterUsage">Daily Water Usage (gallons)</label>
+              <input type="number" id="waterUsage" placeholder="Enter gallons" min="0">
+            </div>
+            <div class="input-group">
+              <label for="recyclingRate">Recycling Rate (%)</label>
+              <input type="number" id="recyclingRate" placeholder="Enter percentage" min="0" max="100">
+            </div>
+            <button onclick="calculateLifestyleImpact()" class="btn-calculate">Calculate Impact</button>
+          </div>
+          
+          <div class="calculator-results" id="lifestyleResults">
+            <h4>Your Lifestyle Impact</h4>
+            <div class="lifestyle-summary">
+              <div class="impact-score">
+                <div class="score-value" id="impactScore">0</div>
+                <div class="score-label">Environmental Score</div>
+                <div class="score-description" id="scoreDescription">Calculate to see your score</div>
+              </div>
+            </div>
+            
+            <div class="lifestyle-breakdown">
+              <h5>Impact Breakdown</h5>
+              <div class="breakdown-item">
+                <span>🥩 Meat Impact:</span>
+                <span id="meatImpact">0 kg CO2/week</span>
+              </div>
+              <div class="breakdown-item">
+                <span>🗑️ Plastic Impact:</span>
+                <span id="plasticImpact">0 items/week</span>
+              </div>
+              <div class="breakdown-item">
+                <span>💧 Water Impact:</span>
+                <span id="waterImpact">0 gallons/day</span>
+              </div>
+              <div class="breakdown-item">
+                <span>♻️ Recycling Impact:</span>
+                <span id="recyclingImpact">0% waste diverted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events & Photo Gallery -->
+    <section class="events-gallery-section">
+      <h3>📸 Past Events & Campaigns</h3>
+      <p class="events-subtitle">A visual journey through our most impactful environmental campaigns and direct actions</p>
+      
+      <div class="events-tabs">
+        <button class="tab-button active" onclick="openEventsTab(event, 'recentEvents')">🕒 Recent Events</button>
+        <button class="tab-button" onclick="openEventsTab(event, 'climateActions')">🌡️ Climate Actions</button>
+        <button class="tab-button" onclick="openEventsTab(event, 'oceanCampaigns')">🌊 Ocean Campaigns</button>
+        <button class="tab-button" onclick="openEventsTab(event, 'forestProtection')">🌳 Forest Protection</button>
+      </div>
+
+      <!-- Recent Events Tab -->
+      <div id="recentEvents" class="tab-content active">
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=800&auto=format&fit=crop" alt="Climate Strike 2024">
+              <div class="event-overlay">
+                <div class="event-date">March 2024</div>
+                <div class="event-location">Global</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🌍 Global Climate Strike 2024</h4>
+              <p>Millions of people worldwide joined forces in the largest climate strike in history, demanding immediate action from world leaders at the UN Climate Summit.</p>
+              <div class="event-stats">
+                <span class="stat">📊 4.2M Participants</span>
+                <span class="stat">🌍 150+ Countries</span>
+                <span class="stat">📢 500+ Cities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=800&auto=format&fit=crop" alt="Arctic Protection">
+              <div class="event-overlay">
+                <div class="event-date">February 2024</div>
+                <div class="event-location">Arctic Ocean</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🧊 Arctic Oil Drilling Protest</h4>
+              <p>Greenpeace activists successfully blocked Shell's Arctic drilling operations for 72 hours, drawing global attention to the fragile Arctic ecosystem.</p>
+              <div class="event-stats">
+                <span class="stat">⏰ 72 Hours Blocked</span>
+                <span class="stat">🚢 15 Ships Involved</span>
+                <span class="stat">📺 2.1M Views</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop" alt="Amazon Protection">
+              <div class="event-overlay">
+                <div class="event-date">January 2024</div>
+                <div class="event-location">Amazon Rainforest</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🌳 Amazon Deforestation Blockade</h4>
+              <p>Indigenous communities and Greenpeace activists established a peaceful blockade to prevent illegal logging operations in the heart of the Amazon.</p>
+              <div class="event-stats">
+                <span class="stat">🌲 50,000 Trees Saved</span>
+                <span class="stat">👥 200+ Activists</span>
+                <span class="stat">📰 Global Coverage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop" alt="Plastic Free Campaign">
+              <div class="event-overlay">
+                <div class="event-date">December 2023</div>
+                <div class="event-location">Pacific Ocean</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🗑️ Great Pacific Garbage Patch Cleanup</h4>
+              <p>Our research vessel documented the extent of plastic pollution and removed over 10 tons of plastic waste from the world's largest garbage patch.</p>
+              <div class="event-stats">
+                <span class="stat">🗑️ 10 Tons Removed</span>
+                <span class="stat">📊 30-Day Mission</span>
+                <span class="stat">🌊 1M km² Surveyed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Climate Actions Tab -->
+      <div id="climateActions" class="tab-content">
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Coal Plant Protest">
+              <div class="event-overlay">
+                <div class="event-date">November 2023</div>
+                <div class="event-location">Germany</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🏭 Coal Plant Shutdown Victory</h4>
+              <p>After 3 years of campaigning, we successfully pressured the German government to shut down the country's largest coal plant, preventing 12 million tons of CO2 annually.</p>
+              <div class="event-stats">
+                <span class="stat">🏭 Plant Shutdown</span>
+                <span class="stat">💨 12M Tons CO2 Saved</span>
+                <span class="stat">⏰ 3-Year Campaign</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Renewable Energy">
+              <div class="event-overlay">
+                <div class="event-date">October 2023</div>
+                <div class="event-location">India</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>☀️ Solar Energy Revolution</h4>
+              <p>We helped install 50,000 solar panels across rural India, providing clean energy to 100,000 households and reducing dependence on fossil fuels.</p>
+              <div class="event-stats">
+                <span class="stat">☀️ 50K Solar Panels</span>
+                <span class="stat">🏠 100K Households</span>
+                <span class="stat">💰 $2M Investment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800&auto=format&fit=crop" alt="Climate Summit">
+              <div class="event-overlay">
+                <div class="event-date">September 2023</div>
+                <div class="event-location">New York</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🏛️ UN Climate Summit Action</h4>
+              <p>We delivered a 2-million-signature petition to world leaders at the UN Climate Summit, demanding immediate action on the climate crisis.</p>
+              <div class="event-stats">
+                <span class="stat">📝 2M Signatures</span>
+                <span class="stat">🌍 195 Countries</span>
+                <span class="stat">📢 Global Impact</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Fossil Fuel Divestment">
+              <div class="event-overlay">
+                <div class="event-date">August 2023</div>
+                <div class="event-location">Global</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>💰 Fossil Fuel Divestment Campaign</h4>
+              <p>Our global divestment campaign convinced 50 major institutions to withdraw $500 billion from fossil fuel investments, redirecting funds to renewable energy.</p>
+              <div class="event-stats">
+                <span class="stat">💰 $500B Divested</span>
+                <span class="stat">🏢 50 Institutions</span>
+                <span class="stat">🌱 Renewable Focus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ocean Campaigns Tab -->
+      <div id="oceanCampaigns" class="tab-content">
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=800&auto=format&fit=crop" alt="Ocean Sanctuary">
+              <div class="event-overlay">
+                <div class="event-date">July 2023</div>
+                <div class="event-location">Antarctic</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🐋 Antarctic Ocean Sanctuary</h4>
+              <p>After 5 years of campaigning, we successfully established the world's largest marine protected area in the Antarctic, covering 1.55 million square kilometers.</p>
+              <div class="event-stats">
+                <span class="stat">🌊 1.55M km² Protected</span>
+                <span class="stat">🐋 7,000 Species</span>
+                <span class="stat">⏰ 5-Year Campaign</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop" alt="Plastic Free Oceans">
+              <div class="event-overlay">
+                <div class="event-date">June 2023</div>
+                <div class="event-location">Mediterranean</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🗑️ Mediterranean Plastic Cleanup</h4>
+              <p>Our month-long expedition removed 15 tons of plastic waste from the Mediterranean Sea and documented the impact on marine life for scientific research.</p>
+              <div class="event-stats">
+                <span class="stat">🗑️ 15 Tons Removed</span>
+                <span class="stat">📊 30-Day Mission</span>
+                <span class="stat">🔬 Scientific Data</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop" alt="Overfishing Protest">
+              <div class="event-overlay">
+                <div class="event-date">May 2023</div>
+                <div class="event-location">North Sea</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🐟 Overfishing Industry Confrontation</h4>
+              <p>We exposed illegal overfishing practices by documenting and reporting industrial fishing vessels that were exceeding quotas and destroying marine ecosystems.</p>
+              <div class="event-stats">
+                <span class="stat">🚢 25 Vessels Documented</span>
+                <span class="stat">📹 500+ Hours Footage</span>
+                <span class="stat">⚖️ Legal Action</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=800&auto=format&fit=crop" alt="Coral Reef Protection">
+              <div class="event-overlay">
+                <div class="event-date">April 2023</div>
+                <div class="event-location">Great Barrier Reef</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🪸 Great Barrier Reef Protection</h4>
+              <p>Our scientific research and public pressure led to increased protection measures for the Great Barrier Reef, including restrictions on industrial activities.</p>
+              <div class="event-stats">
+                <span class="stat">🪸 2,300 km Protected</span>
+                <span class="stat">🔬 6-Month Study</span>
+                <span class="stat">📋 New Regulations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forest Protection Tab -->
+      <div id="forestProtection" class="tab-content">
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop" alt="Amazon Protection">
+              <div class="event-overlay">
+                <div class="event-date">March 2023</div>
+                <div class="event-location">Brazil</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🌳 Amazon Rainforest Defense</h4>
+              <p>We established a permanent monitoring station in the Amazon to document illegal logging and support indigenous communities in protecting their ancestral lands.</p>
+              <div class="event-stats">
+                <span class="stat">🌲 100K Hectares Protected</span>
+                <span class="stat">👥 5 Indigenous Tribes</span>
+                <span class="stat">📡 24/7 Monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?q=80&w=800&auto=format&fit=crop" alt="Borneo Orangutan">
+              <div class="event-overlay">
+                <div class="event-date">February 2023</div>
+                <div class="event-location">Borneo</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🦧 Borneo Orangutan Rescue</h4>
+              <p>Our emergency response team rescued 50 orangutans from deforested areas and worked with local authorities to establish new protected habitats.</p>
+              <div class="event-stats">
+                <span class="stat">🦧 50 Orangutans Rescued</span>
+                <span class="stat">🌲 500 Hectares Protected</span>
+                <span class="stat">🏥 3 New Sanctuaries</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=800&auto=format&fit=crop" alt="Palm Oil Campaign">
+              <div class="event-overlay">
+                <div class="event-date">January 2023</div>
+                <div class="event-location">Indonesia</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🌴 Palm Oil Industry Investigation</h4>
+              <p>Our undercover investigation exposed illegal palm oil plantations destroying rainforests, leading to new regulations and corporate accountability measures.</p>
+              <div class="event-stats">
+                <span class="stat">📹 6-Month Investigation</span>
+                <span class="stat">🏢 10 Companies Exposed</span>
+                <span class="stat">📋 New Regulations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" alt="Reforestation Project">
+              <div class="event-overlay">
+                <div class="event-date">December 2022</div>
+                <div class="event-location">Africa</div>
+              </div>
+            </div>
+            <div class="event-content">
+              <h4>🌱 Great Green Wall Initiative</h4>
+              <p>We planted 1 million trees across the Sahel region as part of the Great Green Wall initiative, combating desertification and creating sustainable livelihoods.</p>
+              <div class="event-stats">
+                <span class="stat">🌲 1M Trees Planted</span>
+                <span class="stat">🌍 8 Countries</span>
+                <span class="stat">👥 10K Local Workers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships-section">
+      <h3>🤝 Our Partners</h3>
+      <p class="partnerships-subtitle">Working together with leading organizations to protect our planet</p>
+      
+      <div class="partnerships-grid">
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="UN Environment Programme">
+          <div class="partner-name">UN Environment Programme</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="World Wildlife Fund">
+          <div class="partner-name">World Wildlife Fund</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="Amnesty International">
+          <div class="partner-name">Amnesty International</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="Oxfam">
+          <div class="partner-name">Oxfam</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="Friends of the Earth">
+          <div class="partner-name">Friends of the Earth</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="350.org">
+          <div class="partner-name">350.org</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="Climate Action Network">
+          <div class="partner-name">Climate Action Network</div>
+        </div>
+        
+        <div class="partner-logo">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop" alt="International Union for Conservation">
+          <div class="partner-name">IUCN</div>
+        </div>
+      </div>
+      
+      <div class="partnerships-description">
+        <p>These partnerships enable us to amplify our impact, share resources, and work together on global environmental challenges. Together, we are stronger in our mission to protect the planet.</p>
+      </div>
+    </section>
+
+    <section class="resources-section">
+      <h3>Resources & Publications</h3>
+      <div class="resources-grid">
+        <div class="resource-item">
+          <h4>📊 Research Reports</h4>
+          <p>Access our latest scientific research and environmental impact studies on climate change, biodiversity, and pollution.</p>
+        </div>
+        <div class="resource-item">
+          <h4>🗺️ Global Mapping Hub</h4>
+          <p>Explore our interactive maps and GIS analysis tools for environmental monitoring and campaign visualization.</p>
+        </div>
+        <div class="resource-item">
+          <h4>📰 Compass Magazine</h4>
+          <p>Read our quarterly members' magazine featuring field reports, campaign updates, and environmental news.</p>
+        </div>
+        <div class="resource-item">
+          <h4>🎥 Media Library</h4>
+          <p>Browse our collection of photos, videos, and multimedia content from campaigns and environmental investigations.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Donations Information Modal -->
+  <div id="donationsInfoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDonationsInfoModal()">&times;</span>
+      <div class="donations-info-container">
+        <h2>Financial Transparency</h2>
+        <p class="donations-subtitle">Greenpeace operates with complete financial transparency. We accept no money from governments or corporations - only from people like you.</p>
+        
+        <div class="donations-tabs">
+          <button class="tab-button active" onclick="openDonationsTab(event, 'financialOverview')">📊 Financial Overview</button>
+          <button class="tab-button" onclick="openDonationsTab(event, 'fundingSources')">💰 Funding Sources</button>
+          <button class="tab-button" onclick="openDonationsTab(event, 'expenseAllocation')">📈 Expense Allocation</button>
+        </div>
+
+        <!-- Financial Overview Tab -->
+        <div id="financialOverview" class="tab-content active">
+          <h3>Financial Overview (2023)</h3>
+          <div class="financial-stats">
+            <div class="stat-card revenue">
+              <div class="stat-icon">💰</div>
+              <div class="stat-content">
+                <h4>Total Revenue</h4>
+                <p class="stat-amount">$40,214,924</p>
+                <p class="stat-description">Total income from all sources</p>
+              </div>
+            </div>
+
+            <div class="stat-card expenses">
+              <div class="stat-icon">📊</div>
+              <div class="stat-content">
+                <h4>Total Expenses</h4>
+                <p class="stat-amount">$38,238,837</p>
+                <p class="stat-description">Total operational costs</p>
+              </div>
+            </div>
+
+            <div class="stat-card assets">
+              <div class="stat-icon">🏦</div>
+              <div class="stat-content">
+                <h4>Net Assets</h4>
+                <p class="stat-amount">$20,892,732</p>
+                <p class="stat-description">Assets at year-end</p>
+              </div>
+            </div>
+
+            <div class="stat-card efficiency">
+              <div class="stat-icon">⚡</div>
+              <div class="stat-content">
+                <h4>Efficiency Ratio</h4>
+                <p class="stat-amount">95.1%</p>
+                <p class="stat-description">Program expenses vs total expenses</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="financial-highlights">
+            <h4>Key Financial Highlights</h4>
+            <ul class="highlights-list">
+              <li>✅ 99.85% of revenue comes from individual contributions</li>
+              <li>✅ No government or corporate funding accepted</li>
+              <li>✅ 95.1% of expenses go directly to program activities</li>
+              <li>✅ Independent financial auditing by certified professionals</li>
+              <li>✅ Full transparency in financial reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Funding Sources Tab -->
+        <div id="fundingSources" class="tab-content">
+          <h3>Funding Sources Breakdown</h3>
+          <div class="funding-breakdown">
+            <div class="funding-card">
+              <div class="funding-icon">👥</div>
+              <div class="funding-content">
+                <h4>Individual Contributions</h4>
+                <p class="funding-amount">$40,153,461</p>
+                <p class="funding-percentage">99.85%</p>
+                <p class="funding-description">Donations from individual supporters worldwide</p>
+                <div class="funding-details">
+                  <span class="detail-tag">Monthly Donors</span>
+                  <span class="detail-tag">One-time Gifts</span>
+                  <span class="detail-tag">Legacy Gifts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="funding-card">
+              <div class="funding-icon">🏛️</div>
+              <div class="funding-content">
+                <h4>Foundation Grants</h4>
+                <p class="funding-amount">$0</p>
+                <p class="funding-percentage">0%</p>
+                <p class="funding-description">No foundation grants accepted to maintain independence</p>
+                <div class="funding-details">
+                  <span class="detail-tag">Independent Funding</span>
+                  <span class="detail-tag">No Strings Attached</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="funding-card">
+              <div class="funding-icon">🏢</div>
+              <div class="funding-content">
+                <h4>Corporate Funding</h4>
+                <p class="funding-amount">$0</p>
+                <p class="funding-percentage">0%</p>
+                <p class="funding-description">No corporate funding to avoid conflicts of interest</p>
+                <div class="funding-details">
+                  <span class="detail-tag">Conflict-Free</span>
+                  <span class="detail-tag">Independent Voice</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="funding-card">
+              <div class="funding-icon">🏛️</div>
+              <div class="funding-content">
+                <h4>Government Funding</h4>
+                <p class="funding-amount">$0</p>
+                <p class="funding-percentage">0%</p>
+                <p class="funding-description">No government funding to maintain political independence</p>
+                <div class="funding-details">
+                  <span class="detail-tag">Political Independence</span>
+                  <span class="detail-tag">Unbiased Advocacy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="funding-card">
+              <div class="funding-icon">📈</div>
+              <div class="funding-content">
+                <h4>Investment Income</h4>
+                <p class="funding-amount">$1,711</p>
+                <p class="funding-percentage">0.004%</p>
+                <p class="funding-description">Minimal income from ethical investments</p>
+                <div class="funding-details">
+                  <span class="detail-tag">Ethical Investing</span>
+                  <span class="detail-tag">Minimal Returns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expense Allocation Tab -->
+        <div id="expenseAllocation" class="tab-content">
+          <h3>How Your Donations Are Used</h3>
+          <div class="expense-breakdown">
+            <div class="expense-card program">
+              <div class="expense-icon">🌍</div>
+              <div class="expense-content">
+                <h4>Program Services</h4>
+                <p class="expense-amount">$26,264,296</p>
+                <p class="expense-percentage">68.7%</p>
+                <p class="expense-description">Direct environmental campaigns and research</p>
+                <div class="expense-details">
+                  <ul>
+                    <li>Climate change campaigns</li>
+                    <li>Ocean protection initiatives</li>
+                    <li>Forest conservation projects</li>
+                    <li>Renewable energy advocacy</li>
+                    <li>Environmental research</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="expense-card fundraising">
+              <div class="expense-icon">📢</div>
+              <div class="expense-content">
+                <h4>Fundraising</h4>
+                <p class="expense-amount">$6,108,186</p>
+                <p class="expense-percentage">16.0%</p>
+                <p class="expense-description">Costs to raise funds for our mission</p>
+                <div class="expense-details">
+                  <ul>
+                    <li>Digital marketing campaigns</li>
+                    <li>Direct mail outreach</li>
+                    <li>Event organization</li>
+                    <li>Donor communication</li>
+                    <li>Online platform maintenance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="expense-card management">
+              <div class="expense-icon">⚙️</div>
+              <div class="expense-content">
+                <h4>Management & General</h4>
+                <p class="expense-amount">$3,198,618</p>
+                <p class="expense-percentage">8.4%</p>
+                <p class="expense-description">Administrative and operational costs</p>
+                <div class="expense-details">
+                  <ul>
+                    <li>Staff salaries and benefits</li>
+                    <li>Office rent and utilities</li>
+                    <li>Legal and accounting services</li>
+                    <li>Technology infrastructure</li>
+                    <li>Insurance and compliance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="expense-card other">
+              <div class="expense-icon">📋</div>
+              <div class="expense-content">
+                <h4>Other Expenses</h4>
+                <p class="expense-amount">$2,667,737</p>
+                <p class="expense-percentage">7.0%</p>
+                <p class="expense-description">Additional operational costs</p>
+                <div class="expense-details">
+                  <ul>
+                    <li>Equipment and supplies</li>
+                    <li>Travel and transportation</li>
+                    <li>Professional development</li>
+                    <li>Miscellaneous expenses</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="efficiency-metrics">
+            <h4>Financial Efficiency Metrics</h4>
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <h5>Program Efficiency</h5>
+                <p class="metric-value">95.1%</p>
+                <p class="metric-description">Percentage of expenses going to programs</p>
+              </div>
+              <div class="metric-card">
+                <h5>Fundraising Efficiency</h5>
+                <p class="metric-value">16.0%</p>
+                <p class="metric-description">Fundraising costs as % of total expenses</p>
+              </div>
+              <div class="metric-card">
+                <h5>Administrative Ratio</h5>
+                <p class="metric-value">8.4%</p>
+                <p class="metric-description">Administrative costs as % of total expenses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="transparency-footer">
+          <p><strong>Financial Transparency:</strong> Greenpeace USA is committed to complete financial transparency. Our audited financial statements are available for public review.</p>
+          <a href="https://www.greenpeace.org/usa/about/annual-reports-and-financial-statements/" target="_blank" class="transparency-link">View Full Financial Statements</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Take Action Modal -->
+  <div id="actionModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeActionModal()">&times;</span>
+      <div class="action-container">
+        <h2>Take Action Now</h2>
+        <p class="action-subtitle">Join millions of people worldwide in demanding environmental justice and climate action</p>
+        
+        <div class="action-tabs">
+          <button class="tab-button active" onclick="openActionTab(event, 'petitions')">📋 Petitions</button>
+          <button class="tab-button" onclick="openActionTab(event, 'directAction')">✊ Direct Action</button>
+          <button class="tab-button" onclick="openActionTab(event, 'localGroups')">👥 Local Groups</button>
+        </div>
+
+        <!-- Petitions Tab -->
+        <div id="petitions" class="tab-content active">
+          <h3>Current Petitions & Campaigns</h3>
+          <div class="petition-grid">
+            <div class="petition-card">
+              <div class="petition-icon">🌍</div>
+              <div class="petition-content">
+                <h4>Ban New Oil & Gas Permits</h4>
+                <p class="petition-target">Target: President Biden & US Government</p>
+                <p class="petition-description">Urge President Biden to ban new oil and gas permits to accelerate the transition to renewable energy and combat climate change.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 2.3M+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://www.greenpeace.org/usa/take-action/" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+
+            <div class="petition-card">
+              <div class="petition-icon">🌊</div>
+              <div class="petition-content">
+                <h4>Global Plastics Treaty</h4>
+                <p class="petition-target">Target: UN Member States</p>
+                <p class="petition-description">Demand a robust Global Plastics Treaty to halt excessive plastic production and address the root causes of plastic pollution.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 1.8M+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://act.greenpeace.org/global-plastics-treaty" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+
+            <div class="petition-card">
+              <div class="petition-icon">🌳</div>
+              <div class="petition-content">
+                <h4>Global Ocean Treaty</h4>
+                <p class="petition-target">Target: UN Ocean Conference</p>
+                <p class="petition-description">Call for the establishment of a Global Ocean Treaty to create marine protected areas and safeguard 30% of oceans.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 3.1M+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://act.greenpeace.org/ocean-treaty" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+
+            <div class="petition-card">
+              <div class="petition-icon">🏭</div>
+              <div class="petition-content">
+                <h4>Clean Air Nation Campaign</h4>
+                <p class="petition-target">Target: Indian Government</p>
+                <p class="petition-description">Advocate for a National Clean Air Action Plan in India to combat air pollution and protect public health.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 850K+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://act.greenpeace.in/" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+
+            <div class="petition-card">
+              <div class="petition-icon">⚡</div>
+              <div class="petition-content">
+                <h4>Climate Change Act</h4>
+                <p class="petition-target">Target: Global Governments</p>
+                <p class="petition-description">Demand comprehensive Climate Change Acts to build climate-resilient communities and address the climate emergency.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 4.2M+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://act.greenpeace.org/climate-action" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+
+            <div class="petition-card">
+              <div class="petition-icon">🐋</div>
+              <div class="petition-content">
+                <h4>Stop Deep Sea Mining</h4>
+                <p class="petition-target">Target: International Seabed Authority</p>
+                <p class="petition-description">Oppose deep sea mining operations that threaten marine ecosystems and biodiversity in our oceans.</p>
+                <div class="petition-stats">
+                  <span class="signature-count">📊 1.5M+ Signatures</span>
+                  <span class="petition-status">🔥 Active</span>
+                </div>
+                <a href="https://act.greenpeace.org/stop-deep-sea-mining" target="_blank" class="petition-link">Sign Petition</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Action Tab -->
+        <div id="directAction" class="tab-content">
+          <h3>Nonviolent Direct Action</h3>
+          <div class="action-info">
+            <div class="action-card">
+              <div class="action-icon">✊</div>
+              <div class="action-content">
+                <h4>Peaceful Protests</h4>
+                <p>Join peaceful demonstrations and protests to bring attention to environmental issues and demand action from governments and corporations.</p>
+                <ul class="action-list">
+                  <li>Climate marches and rallies</li>
+                  <li>Ocean protection demonstrations</li>
+                  <li>Forest conservation protests</li>
+                  <li>Anti-fossil fuel actions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="action-card">
+              <div class="action-icon">🎓</div>
+              <div class="action-content">
+                <h4>Training & Preparation</h4>
+                <p>Receive comprehensive training in nonviolent direct action principles, safety protocols, and effective campaigning techniques.</p>
+                <ul class="action-list">
+                  <li>Nonviolent action workshops</li>
+                  <li>Safety and legal training</li>
+                  <li>Media and communication skills</li>
+                  <li>Team coordination exercises</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="action-card">
+              <div class="action-icon">🌍</div>
+              <div class="action-content">
+                <h4>Global Actions</h4>
+                <p>Participate in coordinated global actions that unite activists worldwide in demanding environmental justice and climate action.</p>
+                <ul class="action-list">
+                  <li>International climate strikes</li>
+                  <li>Global day of action events</li>
+                  <li>Cross-border campaigns</li>
+                  <li>United environmental movements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Local Groups Tab -->
+        <div id="localGroups" class="tab-content">
+          <h3>Join Local Groups</h3>
+          <div class="groups-info">
+            <div class="group-card">
+              <div class="group-icon">🏙️</div>
+              <div class="group-content">
+                <h4>Community Events</h4>
+                <p>Participate in local environmental events, workshops, and community initiatives in your area.</p>
+                <div class="group-activities">
+                  <span class="activity-tag">🌱 Community Gardens</span>
+                  <span class="activity-tag">♻️ Recycling Drives</span>
+                  <span class="activity-tag">📚 Educational Workshops</span>
+                  <span class="activity-tag">🎪 Awareness Events</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-card">
+              <div class="group-icon">🤝</div>
+              <div class="group-content">
+                <h4>Volunteer Networks</h4>
+                <p>Connect with like-minded individuals and join volunteer networks working on environmental issues in your region.</p>
+                <div class="group-activities">
+                  <span class="activity-tag">👥 Local Chapters</span>
+                  <span class="activity-tag">📢 Outreach Programs</span>
+                  <span class="activity-tag">🎯 Campaign Support</span>
+                  <span class="activity-tag">📱 Digital Activism</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-card">
+              <div class="group-icon">🎯</div>
+              <div class="group-content">
+                <h4>Regional Campaigns</h4>
+                <p>Get involved in region-specific environmental campaigns addressing local issues and challenges.</p>
+                <div class="group-activities">
+                  <span class="activity-tag">🏭 Local Pollution</span>
+                  <span class="activity-tag">🌊 Regional Water Issues</span>
+                  <span class="activity-tag">🌳 Local Conservation</span>
+                  <span class="activity-tag">⚡ Renewable Energy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educational Resources Modal -->
+  <div id="educationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeEducationModal()">&times;</span>
+      <div class="education-container">
+        <h2>Educational Resources</h2>
+        <p class="education-subtitle">Learn about environmental issues and discover solutions through research, books, and studies</p>
+        
+        <div class="education-tabs">
+          <button class="tab-button active" onclick="openEducationTab(event, 'researchPapers')">📄 Research Papers</button>
+          <button class="tab-button" onclick="openEducationTab(event, 'books')">📚 Books</button>
+          <button class="tab-button" onclick="openEducationTab(event, 'solutions')">💡 Solutions</button>
+        </div>
+
+        <!-- Research Papers Tab -->
+        <div id="researchPapers" class="tab-content active">
+          <h3>Environmental Research Papers & Studies</h3>
+          <div class="resource-grid">
+            <div class="resource-card">
+              <div class="resource-icon">🌍</div>
+              <div class="resource-content">
+                <h4>Climate Change Impact Assessment</h4>
+                <p class="resource-author">IPCC (Intergovernmental Panel on Climate Change)</p>
+                <p class="resource-description">Comprehensive assessment of climate change impacts, adaptation, and vulnerability. Latest findings on global warming trends and mitigation strategies.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Research Report</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://www.ipcc.ch/reports/" target="_blank" class="resource-link">Read Report</a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon">🌊</div>
+              <div class="resource-content">
+                <h4>Ocean Plastic Pollution Study</h4>
+                <p class="resource-author">Nature Communications</p>
+                <p class="resource-description">Scientific study on the scale and impact of plastic pollution in oceans. Research on microplastics and their effects on marine ecosystems.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Scientific Paper</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://www.nature.com/articles/s41467-023-37528-2" target="_blank" class="resource-link">Read Study</a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon">🌳</div>
+              <div class="resource-content">
+                <h4>Forest Carbon Sequestration</h4>
+                <p class="resource-author">Science Journal</p>
+                <p class="resource-description">Research on how forests act as carbon sinks and their role in climate change mitigation. Studies on deforestation impacts and reforestation benefits.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Research Paper</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://www.science.org/doi/10.1126/science.abc8907" target="_blank" class="resource-link">Read Paper</a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon">⚡</div>
+              <div class="resource-content">
+                <h4>Renewable Energy Transition</h4>
+                <p class="resource-author">Energy Policy Journal</p>
+                <p class="resource-description">Analysis of renewable energy adoption rates and policies worldwide. Economic and environmental benefits of transitioning to clean energy.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Policy Study</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://www.sciencedirect.com/journal/energy-policy" target="_blank" class="resource-link">Read Study</a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon">🐋</div>
+              <div class="resource-content">
+                <h4>Marine Biodiversity Loss</h4>
+                <p class="resource-author">Marine Ecology Progress Series</p>
+                <p class="resource-description">Study on declining marine biodiversity due to overfishing, pollution, and climate change. Conservation strategies for marine ecosystems.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Ecological Study</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://www.int-res.com/journals/meps/" target="_blank" class="resource-link">Read Study</a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon">🏭</div>
+              <div class="resource-content">
+                <h4>Industrial Pollution Control</h4>
+                <p class="resource-author">Environmental Science & Technology</p>
+                <p class="resource-description">Research on industrial pollution reduction techniques and sustainable manufacturing practices. Case studies on successful pollution control measures.</p>
+                <div class="resource-meta">
+                  <span class="resource-type">Technical Study</span>
+                  <span class="resource-year">2023</span>
+                </div>
+                <a href="https://pubs.acs.org/journal/esthag" target="_blank" class="resource-link">Read Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Books Tab -->
+        <div id="books" class="tab-content">
+          <h3>Environmental Books & Publications</h3>
+          <div class="books-grid">
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>Silent Spring</h4>
+                <p class="book-author">Rachel Carson</p>
+                <p class="book-description">The groundbreaking book that launched the environmental movement. Carson's work exposed the dangers of pesticides and their impact on wildlife.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/Silent-Spring-Rachel-Carson/dp/0618249060" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>The Sixth Extinction</h4>
+                <p class="book-author">Elizabeth Kolbert</p>
+                <p class="book-description">Pulitzer Prize-winning book documenting the ongoing mass extinction caused by human activities and its implications for the planet's future.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/Sixth-Extinction-Unnatural-History/dp/1250062187" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>This Changes Everything</h4>
+                <p class="book-author">Naomi Klein</p>
+                <p class="book-description">Explores how climate change challenges our economic system and offers solutions for a sustainable future through systemic change.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/This-Changes-Everything-Capitalism-Climate/dp/1451697384" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>Drawdown</h4>
+                <p class="book-author">Paul Hawken</p>
+                <p class="book-description">Comprehensive plan to reverse global warming through 100 solutions ranked by effectiveness, from renewable energy to regenerative agriculture.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/Drawdown-Comprehensive-Proposal-Reverse-Warming/dp/0143130447" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>Braiding Sweetgrass</h4>
+                <p class="book-author">Robin Wall Kimmerer</p>
+                <p class="book-description">Indigenous wisdom meets scientific knowledge in this exploration of our relationship with nature and the importance of environmental stewardship.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/Braiding-Sweetgrass-Indigenous-Scientific-Knowledge/dp/1571313567" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <div class="book-cover">📖</div>
+              <div class="book-info">
+                <h4>The Uninhabitable Earth</h4>
+                <p class="book-author">David Wallace-Wells</p>
+                <p class="book-description">A stark warning about the consequences of climate change and what the future holds if we don't take immediate action.</p>
+                <div class="book-rating">⭐⭐⭐⭐⭐</div>
+                <a href="https://www.amazon.com/Uninhabitable-Earth-Life-After-Warming/dp/0525576703" target="_blank" class="book-link">Find Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solutions Tab -->
+        <div id="solutions" class="tab-content">
+          <h3>Environmental Solutions & Action Guides</h3>
+          <div class="solutions-grid">
+            <div class="solution-card">
+              <div class="solution-icon">🏠</div>
+              <div class="solution-content">
+                <h4>Individual Actions</h4>
+                <ul class="solution-list">
+                  <li>Reduce energy consumption at home</li>
+                  <li>Use public transportation or bike</li>
+                  <li>Reduce, reuse, and recycle</li>
+                  <li>Choose sustainable products</li>
+                  <li>Support renewable energy</li>
+                </ul>
+                <a href="#" class="solution-link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="solution-icon">🏢</div>
+              <div class="solution-content">
+                <h4>Corporate Solutions</h4>
+                <ul class="solution-list">
+                  <li>Implement circular economy practices</li>
+                  <li>Adopt renewable energy sources</li>
+                  <li>Reduce carbon footprint</li>
+                  <li>Sustainable supply chains</li>
+                  <li>Green building practices</li>
+                </ul>
+                <a href="#" class="solution-link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="solution-icon">🏛️</div>
+              <div class="solution-content">
+                <h4>Policy Solutions</h4>
+                <ul class="solution-list">
+                  <li>Carbon pricing mechanisms</li>
+                  <li>Renewable energy incentives</li>
+                  <li>Environmental regulations</li>
+                  <li>Green infrastructure investment</li>
+                  <li>International climate agreements</li>
+                </ul>
+                <a href="#" class="solution-link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="solution-icon">🔬</div>
+              <div class="solution-content">
+                <h4>Technological Solutions</h4>
+                <ul class="solution-list">
+                  <li>Carbon capture and storage</li>
+                  <li>Electric vehicle technology</li>
+                  <li>Smart grid systems</li>
+                  <li>Ocean cleanup technologies</li>
+                  <li>Renewable energy innovations</li>
+                </ul>
+                <a href="#" class="solution-link">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Corporate Campaigns Modal -->
+  <div id="corporateModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCorporateModal()">&times;</span>
+      <div class="corporate-container">
+        <h2>Corporate Campaigns</h2>
+        <p class="corporate-subtitle">Hold corporations accountable for their environmental impact and demand sustainable practices</p>
+        
+        <div class="corporate-tabs">
+          <button class="tab-button active" onclick="openCorporateTab(event, 'fossilFuel')">⛽ Fossil Fuel</button>
+          <button class="tab-button" onclick="openCorporateTab(event, 'plasticPollution')">🌊 Plastic Pollution</button>
+          <button class="tab-button" onclick="openCorporateTab(event, 'deforestation')">🌳 Deforestation</button>
+        </div>
+
+        <!-- Fossil Fuel Tab -->
+        <div id="fossilFuel" class="tab-content active">
+          <h3>Fossil Fuel Industry Campaigns</h3>
+          <div class="corporate-grid">
+            <div class="corporate-card">
+              <div class="corporate-icon">🛢️</div>
+              <div class="corporate-content">
+                <h4>ExxonMobil</h4>
+                <p class="corporate-issue">Climate Denial & Greenwashing</p>
+                <p class="corporate-description">Campaigning against ExxonMobil's decades of climate denial and demanding they stop greenwashing while continuing fossil fuel expansion.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Stop new fossil fuel projects</li>
+                    <li>End climate denial campaigns</li>
+                    <li>Invest in renewable energy</li>
+                    <li>Pay for climate damages</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/usa/campaigns/fossil-fuel-industry/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">⛽</div>
+              <div class="corporate-content">
+                <h4>Shell</h4>
+                <p class="corporate-issue">Arctic Drilling & Climate Impact</p>
+                <p class="corporate-description">Targeting Shell's Arctic drilling operations and demanding accountability for their massive carbon footprint and environmental destruction.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Abandon Arctic drilling</li>
+                    <li>Reduce carbon emissions by 45%</li>
+                    <li>Stop lobbying against climate action</li>
+                    <li>Transition to renewable energy</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/shell/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">🏭</div>
+              <div class="corporate-content">
+                <h4>Chevron</h4>
+                <p class="corporate-issue">Environmental Justice & Pollution</p>
+                <p class="corporate-description">Campaigning against Chevron's environmental racism and pollution in communities of color, demanding justice and accountability.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Stop polluting communities</li>
+                    <li>Pay for environmental damages</li>
+                    <li>End environmental racism</li>
+                    <li>Support clean energy transition</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/usa/campaigns/chevron/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plastic Pollution Tab -->
+        <div id="plasticPollution" class="tab-content">
+          <h3>Plastic Pollution Campaigns</h3>
+          <div class="corporate-grid">
+            <div class="corporate-card">
+              <div class="corporate-icon">🥤</div>
+              <div class="corporate-content">
+                <h4>Coca-Cola</h4>
+                <p class="corporate-issue">Single-Use Plastic Bottles</p>
+                <p class="corporate-description">Campaigning against Coca-Cola's massive plastic footprint, producing over 3 million tons of plastic packaging annually.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Reduce plastic production by 50%</li>
+                    <li>Invest in refillable systems</li>
+                    <li>Stop opposing bottle bills</li>
+                    <li>Support Global Plastics Treaty</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/coca-cola/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">🍔</div>
+              <div class="corporate-content">
+                <h4>McDonald's</h4>
+                <p class="corporate-issue">Fast Food Plastic Waste</p>
+                <p class="corporate-description">Targeting McDonald's plastic packaging and single-use items, demanding they eliminate unnecessary plastic from their operations.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Eliminate single-use plastics</li>
+                    <li>Use compostable packaging</li>
+                    <li>Implement refillable systems</li>
+                    <li>Reduce overall packaging</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/mcdonalds/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">🛒</div>
+              <div class="corporate-content">
+                <h4>Amazon</h4>
+                <p class="corporate-issue">E-commerce Packaging Waste</p>
+                <p class="corporate-description">Campaigning against Amazon's excessive packaging and plastic waste from online deliveries, demanding sustainable packaging solutions.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Reduce packaging waste</li>
+                    <li>Use recyclable materials</li>
+                    <li>Implement packaging-free options</li>
+                    <li>Support circular economy</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/amazon/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deforestation Tab -->
+        <div id="deforestation" class="tab-content">
+          <h3>Deforestation Campaigns</h3>
+          <div class="corporate-grid">
+            <div class="corporate-card">
+              <div class="corporate-icon">🌴</div>
+              <div class="corporate-content">
+                <h4>Nestlé</h4>
+                <p class="corporate-issue">Palm Oil Deforestation</p>
+                <p class="corporate-description">Campaigning against Nestlé's use of palm oil linked to deforestation, demanding they eliminate deforestation from their supply chain.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Eliminate deforestation-linked palm oil</li>
+                    <li>Support sustainable agriculture</li>
+                    <li>Protect indigenous rights</li>
+                    <li>Transparent supply chains</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/nestle/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">🍫</div>
+              <div class="corporate-content">
+                <h4>Mars</h4>
+                <p class="corporate-issue">Cocoa Deforestation</p>
+                <p class="corporate-description">Targeting Mars' cocoa sourcing practices that contribute to deforestation in West Africa, demanding sustainable cocoa production.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Stop cocoa deforestation</li>
+                    <li>Support agroforestry</li>
+                    <li>Fair trade practices</li>
+                    <li>Protect biodiversity</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/mars/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+
+            <div class="corporate-card">
+              <div class="corporate-icon">📦</div>
+              <div class="corporate-content">
+                <h4>Procter & Gamble</h4>
+                <p class="corporate-issue">Forest Destruction for Tissue</p>
+                <p class="corporate-description">Campaigning against P&G's destruction of ancient forests for toilet paper and tissue products, demanding sustainable alternatives.</p>
+                <div class="corporate-stats">
+                  <span class="campaign-status">🎯 Active Campaign</span>
+                  <span class="impact-level">🔥 High Impact</span>
+                </div>
+                <div class="corporate-demands">
+                  <h5>Our Demands:</h5>
+                  <ul>
+                    <li>Stop destroying ancient forests</li>
+                    <li>Use recycled materials</li>
+                    <li>Support sustainable forestry</li>
+                    <li>Protect old-growth forests</li>
+                  </ul>
+                </div>
+                <a href="https://www.greenpeace.org/international/campaigns/procter-gamble/" target="_blank" class="corporate-link">Join Campaign</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Media Sharing Modal -->
+  <div id="socialModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSocialModal()">&times;</span>
+      <div class="social-container">
+        <h2>Spread the Word</h2>
+        <p class="social-subtitle">Help us amplify our environmental message across social media</p>
+        
+        <div class="social-tabs">
+          <button class="tab-button active" onclick="openTab(event, 'shareContent')">📤 Share Content</button>
+          <button class="tab-button" onclick="openTab(event, 'followUs')">👥 Follow Us</button>
+          <button class="tab-button" onclick="openTab(event, 'hashtags')">#️⃣ Hashtags</button>
+        </div>
+
+        <!-- Share Content Tab -->
+        <div id="shareContent" class="tab-content active">
+          <h3>Share Environmental Messages</h3>
+          <div class="message-templates">
+            <div class="message-card">
+              <h4>🌍 Climate Action</h4>
+              <textarea readonly class="message-text">🌍 The climate crisis is real and urgent! Join Greenpeace in demanding immediate action from governments and corporations. Every voice matters in the fight for our planet's future. #ClimateAction #Greenpeace #SaveOurPlanet</textarea>
+              <button onclick="copyMessage(this)" class="copy-btn">📋 Copy</button>
+              <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.greenpeace.org&quote=🌍 The climate crisis is real and urgent! Join Greenpeace in demanding immediate action from governments and corporations. Every voice matters in the fight for our planet's future. #ClimateAction #Greenpeace #SaveOurPlanet" target="_blank" class="social-btn facebook">📘 Facebook</a>
+                <a href="https://twitter.com/intent/tweet?text=🌍 The climate crisis is real and urgent! Join Greenpeace in demanding immediate action from governments and corporations. Every voice matters in the fight for our planet's future. #ClimateAction #Greenpeace #SaveOurPlanet" target="_blank" class="social-btn twitter">🐦 Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.greenpeace.org" target="_blank" class="social-btn linkedin">💼 LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="message-card">
+              <h4>🌊 Ocean Protection</h4>
+              <textarea readonly class="message-text">🌊 Our oceans are drowning in plastic! Over 8 million tons of plastic enter our oceans every year. Support Greenpeace's campaign to create ocean sanctuaries and end plastic pollution. #SaveTheOceans #PlasticFree #Greenpeace</textarea>
+              <button onclick="copyMessage(this)" class="copy-btn">📋 Copy</button>
+              <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.greenpeace.org&quote=🌊 Our oceans are drowning in plastic! Over 8 million tons of plastic enter our oceans every year. Support Greenpeace's campaign to create ocean sanctuaries and end plastic pollution. #SaveTheOceans #PlasticFree #Greenpeace" target="_blank" class="social-btn facebook">📘 Facebook</a>
+                <a href="https://twitter.com/intent/tweet?text=🌊 Our oceans are drowning in plastic! Over 8 million tons of plastic enter our oceans every year. Support Greenpeace's campaign to create ocean sanctuaries and end plastic pollution. #SaveTheOceans #PlasticFree #Greenpeace" target="_blank" class="social-btn twitter">🐦 Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.greenpeace.org" target="_blank" class="social-btn linkedin">💼 LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="message-card">
+              <h4>🌳 Forest Conservation</h4>
+              <textarea readonly class="message-text">🌳 Forests are the lungs of our planet! They absorb CO2, provide oxygen, and house incredible biodiversity. Help Greenpeace protect forests from deforestation and illegal logging. #ProtectForests #Greenpeace #Biodiversity</textarea>
+              <button onclick="copyMessage(this)" class="copy-btn">📋 Copy</button>
+              <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.greenpeace.org&quote=🌳 Forests are the lungs of our planet! They absorb CO2, provide oxygen, and house incredible biodiversity. Help Greenpeace protect forests from deforestation and illegal logging. #ProtectForests #Greenpeace #Biodiversity" target="_blank" class="social-btn facebook">📘 Facebook</a>
+                <a href="https://twitter.com/intent/tweet?text=🌳 Forests are the lungs of our planet! They absorb CO2, provide oxygen, and house incredible biodiversity. Help Greenpeace protect forests from deforestation and illegal logging. #ProtectForests #Greenpeace #Biodiversity" target="_blank" class="social-btn twitter">🐦 Twitter</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.greenpeace.org" target="_blank" class="social-btn linkedin">💼 LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Follow Us Tab -->
+        <div id="followUs" class="tab-content">
+          <h3>Follow Greenpeace on Social Media</h3>
+          <div class="social-accounts">
+            <div class="account-card">
+              <div class="account-icon facebook-icon">📘</div>
+              <div class="account-info">
+                <h4>Facebook</h4>
+                <p>@Greenpeace International</p>
+                <a href="https://www.facebook.com/greenpeace.international" target="_blank" class="follow-btn">Follow</a>
+              </div>
+            </div>
+            
+            <div class="account-card">
+              <div class="account-icon twitter-icon">🐦</div>
+              <div class="account-info">
+                <h4>Twitter</h4>
+                <p>@Greenpeace</p>
+                <a href="https://twitter.com/Greenpeace" target="_blank" class="follow-btn">Follow</a>
+              </div>
+            </div>
+            
+            <div class="account-card">
+              <div class="account-icon instagram-icon">📷</div>
+              <div class="account-info">
+                <h4>Instagram</h4>
+                <p>@greenpeace</p>
+                <a href="https://www.instagram.com/greenpeace/" target="_blank" class="follow-btn">Follow</a>
+              </div>
+            </div>
+            
+            <div class="account-card">
+              <div class="account-icon youtube-icon">📺</div>
+              <div class="account-info">
+                <h4>YouTube</h4>
+                <p>Greenpeace Video</p>
+                <a href="https://www.youtube.com/user/GreenpeaceVideo" target="_blank" class="follow-btn">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hashtags Tab -->
+        <div id="hashtags" class="tab-content">
+          <h3>Environmental Hashtags</h3>
+          <div class="hashtag-sections">
+            <div class="hashtag-group">
+              <h4>🌍 Climate Action</h4>
+              <div class="hashtag-list">
+                <span class="hashtag" onclick="copyHashtag(this)">#ClimateAction</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#ClimateCrisis</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#GlobalWarming</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#RenewableEnergy</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#FossilFree</span>
+              </div>
+            </div>
+            
+            <div class="hashtag-group">
+              <h4>🌊 Ocean Protection</h4>
+              <div class="hashtag-list">
+                <span class="hashtag" onclick="copyHashtag(this)">#SaveTheOceans</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#PlasticFree</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#OceanSanctuaries</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#MarineLife</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#StopOverfishing</span>
+              </div>
+            </div>
+            
+            <div class="hashtag-group">
+              <h4>🌳 Forest Conservation</h4>
+              <div class="hashtag-list">
+                <span class="hashtag" onclick="copyHashtag(this)">#ProtectForests</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#StopDeforestation</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#Biodiversity</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#WildlifeProtection</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#SustainableForests</span>
+              </div>
+            </div>
+            
+            <div class="hashtag-group">
+              <h4>🤝 Greenpeace</h4>
+              <div class="hashtag-list">
+                <span class="hashtag" onclick="copyHashtag(this)">#Greenpeace</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#EnvironmentalAction</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#Activism</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#SaveOurPlanet</span>
+                <span class="hashtag" onclick="copyHashtag(this)">#EnvironmentalJustice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Application Modal -->
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeVolunteerModal()">&times;</span>
+      <div class="volunteer-container">
+        <h2>Join Greenpeace as a Volunteer</h2>
+        <p class="volunteer-subtitle">Help us protect our planet - every action counts!</p>
+        
+        <form id="volunteerForm" class="volunteer-form">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="location">City/Location *</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="age">Age</label>
+            <select id="age" name="age">
+              <option value="">Select Age Range</option>
+              <option value="16-18">16-18 years</option>
+              <option value="19-25">19-25 years</option>
+              <option value="26-35">26-35 years</option>
+              <option value="36-50">36-50 years</option>
+              <option value="50+">50+ years</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="interests">Areas of Interest</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="climate-action">
+                🌍 Climate Action
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="ocean-protection">
+                🌊 Ocean Protection
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="forest-conservation">
+                🌳 Forest Conservation
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="community-outreach">
+                👥 Community Outreach
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="social-media">
+                📱 Social Media & Digital
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="events">
+                🎪 Events & Fundraising
+              </label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="availability">How much time can you commit?</label>
+            <select id="availability" name="availability">
+              <option value="">Select Time Commitment</option>
+              <option value="few-hours-week">Few hours per week</option>
+              <option value="weekend-only">Weekends only</option>
+              <option value="special-events">Special events only</option>
+              <option value="flexible">Flexible schedule</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="motivation">Why do you want to volunteer with Greenpeace? *</label>
+            <textarea id="motivation" name="motivation" rows="4" placeholder="Tell us what drives your passion for environmental protection..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" value="yes">
+              📧 I'd like to receive updates about Greenpeace campaigns and volunteer opportunities
+            </label>
+          </div>
+          
+          <div class="form-actions">
+            <button type="button" onclick="closeVolunteerModal()" class="btn-secondary">Cancel</button>
+            <button type="submit" class="btn-primary">Submit Application</button>
+          </div>
+        </form>
+        
+        <div class="volunteer-info">
+          <h3>What happens next?</h3>
+          <div class="info-steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <p>We'll review your application</p>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <p>Our team will contact you within 3-5 days</p>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <p>You'll receive orientation materials and next steps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Donation Modal -->
+  <div id="donationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDonationModal()">&times;</span>
+      <div class="donation-container">
+        <h2>Support Greenpeace</h2>
+        <p class="donation-subtitle">Help us protect our planet for future generations</p>
+        
+        <div class="donation-options">
+          <div class="donation-method">
+            <h3>💳 UPI Payment</h3>
+            <p>Scan the QR code below with any UPI app to make a donation</p>
+            
+            <div class="qr-container">
+              <div class="qr-card">
+                <div class="qr-header">
+                  <div class="profile-icon">H</div>
+                  <span class="profile-name">Himanshu Joshi</span>
+                </div>
+                <div class="qr-code-container">
+                  <div class="qr-code-image">
+                    <img src="qr-code.svg" alt="UPI QR Code" class="qr-code-img">
+                    <div class="gpay-overlay">GPay</div>
+                  </div>
+                </div>
+                <div class="upi-id">UPI ID: joshi11112006@oksbi</div>
+                <p class="scan-instruction">Scan to pay with any UPI app</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="donation-method">
+            <h3>🏦 Bank Transfer</h3>
+            <div class="bank-details">
+              <div class="bank-info">
+                <label>Account Name:</label>
+                <span>Greenpeace NGO</span>
+              </div>
+              <div class="bank-info">
+                <label>Account Number:</label>
+                <span>032610214242</span>
+              </div>
+              <div class="bank-info">
+                <label>IFSC Code:</label>
+                <span>IPOS0000001</span>
+              </div>
+              <div class="bank-info">
+                <label>Bank Name:</label>
+                <span>India Post Payments Bank</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="donation-footer">
+          <p class="donation-note">💚 Your donation helps us remain independent and continue our environmental campaigns</p>
+          <button onclick="closeDonationModal()" class="btn-action">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer-ngo">
+    <div class="footer-content">
+      <p>&copy; 2025 NGO Monitoring Dashboard. Information inspired by Greenpeace.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Donations Info Modal Functions
+    function openDonationsInfoModal() {
+      document.getElementById('donationsInfoModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDonationsInfoModal() {
+      document.getElementById('donationsInfoModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Donations Tab Functionality
+    function openDonationsTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Take Action Modal Functions
+    function openActionModal() {
+      document.getElementById('actionModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeActionModal() {
+      document.getElementById('actionModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Take Action Tab Functionality
+    function openActionTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Corporate Campaigns Modal Functions
+    function openCorporateModal() {
+      document.getElementById('corporateModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCorporateModal() {
+      document.getElementById('corporateModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Corporate Tab Functionality
+    function openCorporateTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Education Modal Functions
+    function openEducationModal() {
+      document.getElementById('educationModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeEducationModal() {
+      document.getElementById('educationModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Education Tab Functionality
+    function openEducationTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Social Media Modal Functions
+    function openSocialModal() {
+      document.getElementById('socialModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSocialModal() {
+      document.getElementById('socialModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Tab Functionality
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Copy Message Function
+    function copyMessage(button) {
+      const messageCard = button.closest('.message-card');
+      const textarea = messageCard.querySelector('.message-text');
+      textarea.select();
+      document.execCommand('copy');
+      
+      // Visual feedback
+      button.textContent = '✅ Copied!';
+      button.style.background = '#2ecc71';
+      setTimeout(() => {
+        button.textContent = '📋 Copy';
+        button.style.background = '';
+      }, 2000);
+    }
+
+    // Copy Hashtag Function
+    function copyHashtag(element) {
+      const hashtag = element.textContent;
+      navigator.clipboard.writeText(hashtag).then(() => {
+        // Visual feedback
+        const originalText = element.textContent;
+        element.textContent = '✅ Copied!';
+        element.style.background = '#2ecc71';
+        element.style.color = 'white';
+        setTimeout(() => {
+          element.textContent = originalText;
+          element.style.background = '';
+          element.style.color = '';
+        }, 1500);
+      });
+    }
+
+    // Volunteer Modal Functions
+    function openVolunteerModal() {
+      document.getElementById('volunteerModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVolunteerModal() {
+      document.getElementById('volunteerModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+      // Reset form when closing
+      document.getElementById('volunteerForm').reset();
+    }
+
+    // Donation Modal Functions
+    function openDonationModal() {
+      document.getElementById('donationModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDonationModal() {
+      document.getElementById('donationModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Form Submission Handler
+    document.getElementById('volunteerForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      
+      // Get form data
+      const formData = new FormData(this);
+      const volunteerData = {};
+      
+      // Convert FormData to object
+      for (let [key, value] of formData.entries()) {
+        if (volunteerData[key]) {
+          // Handle multiple values (like checkboxes)
+          if (Array.isArray(volunteerData[key])) {
+            volunteerData[key].push(value);
+          } else {
+            volunteerData[key] = [volunteerData[key], value];
+          }
+        } else {
+          volunteerData[key] = value;
+        }
+      }
+      
+      // Simple validation
+      if (!volunteerData.fullName || !volunteerData.email || !volunteerData.location || !volunteerData.motivation) {
+        alert('Please fill in all required fields (*)');
+        return;
+      }
+      
+      // Show success message
+      alert('Thank you for your application! We will contact you within 3-5 days.');
+      
+      // Close modal and reset form
+      closeVolunteerModal();
+      
+      // In a real application, you would send this data to your server
+      console.log('Volunteer Application Data:', volunteerData);
+    });
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      const donationsInfoModal = document.getElementById('donationsInfoModal');
+      const actionModal = document.getElementById('actionModal');
+      const corporateModal = document.getElementById('corporateModal');
+      const educationModal = document.getElementById('educationModal');
+      const socialModal = document.getElementById('socialModal');
+      const volunteerModal = document.getElementById('volunteerModal');
+      const donationModal = document.getElementById('donationModal');
+      
+      if (event.target == donationsInfoModal) {
+        closeDonationsInfoModal();
+      }
+      if (event.target == actionModal) {
+        closeActionModal();
+      }
+      if (event.target == corporateModal) {
+        closeCorporateModal();
+      }
+      if (event.target == educationModal) {
+        closeEducationModal();
+      }
+      if (event.target == socialModal) {
+        closeSocialModal();
+      }
+      if (event.target == volunteerModal) {
+        closeVolunteerModal();
+      }
+      if (event.target == donationModal) {
+        closeDonationModal();
+      }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeDonationsInfoModal();
+        closeActionModal();
+        closeCorporateModal();
+        closeEducationModal();
+        closeSocialModal();
+        closeVolunteerModal();
+        closeDonationModal();
+      }
+    });
+
+    // ===================================
+    // EVENTS GALLERY FUNCTIONS
+    // ===================================
+
+    // Events Tab Functionality
+    function openEventsTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.includes('recentEvents') || tabcontent[i].id.includes('climateActions') || 
+            tabcontent[i].id.includes('oceanCampaigns') || tabcontent[i].id.includes('forestProtection')) {
+          tabcontent[i].classList.remove("active");
+        }
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].onclick.toString().includes('openEventsTab')) {
+          tablinks[i].classList.remove("active");
+        }
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // ===================================
+    // ENVIRONMENTAL DASHBOARD FUNCTIONS
+    // ===================================
+
+    // Dashboard Tab Functionality
+    function openDashboardTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.includes('climateData') || tabcontent[i].id.includes('airQuality') || 
+            tabcontent[i].id.includes('deforestation') || tabcontent[i].id.includes('oceanHealth')) {
+          tabcontent[i].classList.remove("active");
+        }
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].onclick.toString().includes('openDashboardTab')) {
+          tablinks[i].classList.remove("active");
+        }
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // ===================================
+    // IMPACT CALCULATOR FUNCTIONS
+    // ===================================
+
+    // Calculator Tab Functionality
+    function openCalculatorTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.includes('donationImpact') || tabcontent[i].id.includes('carbonFootprint') || 
+            tabcontent[i].id.includes('lifestyleImpact')) {
+          tabcontent[i].classList.remove("active");
+        }
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].onclick.toString().includes('openCalculatorTab')) {
+          tablinks[i].classList.remove("active");
+        }
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Donation Impact Calculator
+    function calculateDonationImpact() {
+      const amount = parseFloat(document.getElementById('donationAmount').value);
+      
+      if (!amount || amount <= 0) {
+        alert('Please enter a valid donation amount');
+        return;
+      }
+
+      // Calculate impact based on real Greenpeace data
+      const treesPlanted = Math.round(amount * 0.5); // $2 per tree
+      const oceanProtected = Math.round(amount * 0.1); // $10 per km²
+      const co2Reduced = Math.round(amount * 0.02); // $50 per ton CO2
+      const campaignsSupported = Math.round(amount / 100); // $100 per campaign
+
+      // Update results with animation
+      animateValue('treesPlanted', 0, treesPlanted, 1000);
+      animateValue('oceanProtected', 0, oceanProtected, 1000);
+      animateValue('co2Reduced', 0, co2Reduced, 1000);
+      animateValue('campaignsSupported', 0, campaignsSupported, 1000);
+    }
+
+    // Carbon Footprint Calculator
+    function calculateCarbonFootprint() {
+      const electricity = parseFloat(document.getElementById('monthlyElectricity').value) || 0;
+      const gas = parseFloat(document.getElementById('monthlyGas').value) || 0;
+      const miles = parseFloat(document.getElementById('monthlyMiles').value) || 0;
+      const flights = parseFloat(document.getElementById('monthlyFlights').value) || 0;
+
+      // Calculate CO2 emissions (simplified calculations)
+      const homeEnergy = ((electricity * 0.4) + (gas * 0.2)) * 12; // tons CO2/year
+      const transportation = (miles * 0.4) * 12; // tons CO2/year
+      const airTravel = flights * 0.5 * 12; // tons CO2/year
+      const totalFootprint = homeEnergy + transportation + airTravel;
+
+      // Update results
+      animateValue('totalFootprint', 0, totalFootprint, 1000);
+      animateValue('homeEnergy', 0, homeEnergy, 1000);
+      animateValue('transportation', 0, transportation, 1000);
+      animateValue('airTravel', 0, airTravel, 1000);
+
+      // Update display
+      document.getElementById('homeEnergy').textContent = homeEnergy.toFixed(1) + ' tons';
+      document.getElementById('transportation').textContent = transportation.toFixed(1) + ' tons';
+      document.getElementById('airTravel').textContent = airTravel.toFixed(1) + ' tons';
+    }
+
+    // Lifestyle Impact Calculator
+    function calculateLifestyleImpact() {
+      const meatConsumption = parseFloat(document.getElementById('meatConsumption').value) || 0;
+      const plasticUsage = parseFloat(document.getElementById('plasticUsage').value) || 0;
+      const waterUsage = parseFloat(document.getElementById('waterUsage').value) || 0;
+      const recyclingRate = parseFloat(document.getElementById('recyclingRate').value) || 0;
+
+      // Calculate impact scores
+      const meatImpact = meatConsumption * 2.5; // kg CO2 per meal
+      const plasticImpact = plasticUsage; // items per week
+      const waterImpact = waterUsage; // gallons per day
+      const recyclingImpact = recyclingRate; // percentage
+
+      // Calculate overall environmental score (0-100)
+      let score = 100;
+      score -= (meatConsumption * 2); // Reduce score for meat consumption
+      score -= (plasticUsage * 0.5); // Reduce score for plastic usage
+      score -= Math.max(0, (waterUsage - 50) * 0.1); // Reduce if over 50 gallons/day
+      score += (recyclingRate * 0.3); // Increase for recycling
+      score = Math.max(0, Math.min(100, score));
+
+      // Determine score description
+      let description = '';
+      if (score >= 80) description = 'Excellent! You\'re an environmental champion!';
+      else if (score >= 60) description = 'Good! You\'re making positive choices.';
+      else if (score >= 40) description = 'Fair. There\'s room for improvement.';
+      else description = 'Needs work. Every small change helps!';
+
+      // Update results
+      animateValue('impactScore', 0, score, 1000);
+      document.getElementById('scoreDescription').textContent = description;
+      document.getElementById('meatImpact').textContent = meatImpact.toFixed(1) + ' kg CO2/week';
+      document.getElementById('plasticImpact').textContent = plasticImpact + ' items/week';
+      document.getElementById('waterImpact').textContent = waterImpact + ' gallons/day';
+      document.getElementById('recyclingImpact').textContent = recyclingImpact + '% waste diverted';
+    }
+
+    // Animation function for smooth number transitions
+    function animateValue(elementId, start, end, duration) {
+      const element = document.getElementById(elementId);
+      const range = end - start;
+      const increment = range / (duration / 16);
+      let current = start;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+          current = end;
+          clearInterval(timer);
+        }
+        element.textContent = Math.round(current);
+      }, 16);
+    }
+
+    // Initialize dashboard with some sample data updates
+    function initializeDashboard() {
+      // Simulate real-time data updates
+      setInterval(() => {
+        // Update some values slightly to show "live" data
+        const dataValues = document.querySelectorAll('.data-value');
+        dataValues.forEach(value => {
+          if (Math.random() > 0.95) { // 5% chance to update
+            const currentValue = parseFloat(value.textContent);
+            const change = (Math.random() - 0.5) * 0.1; // Small random change
+            value.textContent = (currentValue + change).toFixed(1);
+          }
+        });
+      }, 10000); // Update every 10 seconds
+    }
+
+    // Initialize dashboard when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeDashboard();
+    });
+
+
+  </script>
+</main>
+
+  <!-- Contact Us Modal -->
+  <div id="contact-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="education-container">
+        <h2>Contact Greenpeace India</h2>
+        <p class="education-subtitle">Official contact information sourced from Greenpeace India</p>
+
+        <div class="financial-stats">
+          <div class="stat-card revenue">
+            <div class="stat-icon">📍</div>
+            <div class="stat-content">
+              <h4>Greenpeace International (Global HQ)</h4>
+              <p class="stat-description">Stadhouderskade 55, 1072 AB Amsterdam, The Netherlands</p>
+            </div>
+          </div>
+          <div class="stat-card expenses">
+            <div class="stat-icon">📞</div>
+            <div class="stat-content">
+              <h4>Phone</h4>
+              <p class="stat-description">+31 20 718 2000</p>
+            </div>
+          </div>
+          <div class="stat-card assets">
+            <div class="stat-icon">✉️</div>
+            <div class="stat-content">
+              <h4>Email</h4>
+              <p class="stat-description"><a href="mailto:info@greenpeace.org">info@greenpeace.org</a></p>
+            </div>
+          </div>
+          <div class="stat-card efficiency">
+            <div class="stat-icon">🌐</div>
+            <div class="stat-content">
+              <h4>Website</h4>
+              <p class="stat-description"><a href="https://www.greenpeace.org" target="_blank" rel="noopener">greenpeace.org</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="financial-highlights">
+          <h4>Greenpeace India</h4>
+          <ul class="highlights-list">
+            <li>Address: 60 Wellington Street, Richmond Town, Bengaluru, Karnataka 560025, India</li>
+            <li>Phone: +91 80 4282 1010</li>
+            <li>Email: <a href="mailto:support.india@greenpeace.org">support.india@greenpeace.org</a></li>
+            <li>Website: <a href="https://www.greenpeace.org/india/en/" target="_blank" rel="noopener">greenpeace.org/india</a></li>
+          </ul>
+        </div>
+
+        <div class="transparency-footer">
+          <p>For media inquiries, partnerships, or donations, please visit the official website to find specific department contacts.</p>
+          <a class="transparency-link" href="https://www.greenpeace.org/india/en/" target="_blank" rel="noopener">Visit Greenpeace India</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var triggers = document.querySelectorAll('[data-modal="contact"]');
+      var modal = document.getElementById('contact-modal');
+      var closeBtn = modal ? modal.querySelector('.close') : null;
+
+      function openModal(e){
+        if(e) e.preventDefault();
+        if(modal){ modal.style.display = 'block'; document.body.style.overflow = 'hidden'; }
+      }
+      function closeModal(){
+        if(modal){ modal.style.display = 'none'; document.body.style.overflow = ''; }
+      }
+      triggers.forEach(function(t){ t.addEventListener('click', openModal); });
+      if(closeBtn){ closeBtn.addEventListener('click', closeModal); }
+      window.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+    })();
+  </script>
+</body>
+</html>

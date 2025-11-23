@@ -1,0 +1,5 @@
+.site-header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.2) blur(6px); background: rgba(255,255,255,.8); border-bottom: 1px solid rgba(15,23,42,.06); }
+.navbar { max-width: 1100px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { font-weight: 800; text-decoration: none; color: var(--primary, #111827); letter-spacing: .2px; }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+
